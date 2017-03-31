@@ -1,0 +1,9 @@
+{
+    "name": "WebApp",
+    "version": "0.0.1",
+    "author": "Nxiao <363305175@qq.com>",
+    "description": "nodejs全栈案例",
+    "dependencies": {
+        "log4js": "*"
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>WebSocket</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />	
+		<style type="text/css">
+			html,body{ width: 100%;height:100%;overflow: hidden;}
+			body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{margin:0;padding:0;-webkit-user-select:none;-ms-user-select:none;-moz-user-select:none,user-select:none}	
+			.main{
+				width: 400px;
+				height: 300px;
+				left: 50%;
+				top: 50px;
+				margin-left: -200px;
+				position: relative;				
+			}
+			textarea{
+				resize:none;
+				outline:none;
+				width: 398px;
+				height: 260px;
+			}
+			.send{
+				width: 100%;
+				bottom: 0px;
+				position: absolute;
+			}	
+			#inputbox{
+				height: 25px;
+				width: 300px;
+			}
+			#sendbutton{
+				height: 28px;
+				width: 80px;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<textarea id="terminal"></textarea>
+			<div class="send">
+				<input type="input" id="inputbox">
+				<input type="button" id="sendbutton" value="发送数据">
+			</div>
+		</div>
+		<script type="text/javascript">
+			var terminal,inputbox,sendbutton,mysql=[],websocket = new WebSocket('ws://192.168.202.204:8080/doem'); 
+			websocket.onopen = function(event) { 
+				terminal = document.getElementById("terminal");
+				inputbox = document.getElementById("inputbox");
+				sendbutton = document.getElementById("sendbutton");
+				terminal.value = "ws://192.168.202.204:8080/doem 连接成功";
+				sendbutton.onclick = function(event){
+					var news = inputbox.value;
+					if(news){
+						websocket.send(news);
+						mysql.push("我的聊天:"+news);
+						inputbox.value = "";
+						terminal.value = mysql.join("\n");
+					}else{
+						alert("请输入需要发送的内容");
+					}
+				}				 
+			} 
+			websocket.onclose = function(event) { 
+				console.log("websocket断开");
+			} 
+			websocket.onmessage = function(event) { 
+				mysql.push(event.data);
+				terminal.value = mysql.join("\n");
+			} 
+			websocket.onerror = function(event) { 
+				console.log('websocket异常'+event.data);
+			}
+			window.onbeforeunload = window.onunload = function(){
+				websocket.close();
+			}				
+		</script>		
+	</body>
+</html>
+
+

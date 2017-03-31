@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>WebSocket</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />	
+	</head>
+	<body>
+		<script type="text/javascript">
+			var websocket = new WebSocket('ws://192.168.202.204:8888/doem'); 
+			function websocketOpen(event) { 
+				console.log("Connected to WebSocket server.");
+				setTimeout(function(){
+					websocket.send("客户端发送开始接受数据"); 
+				},1000);
+				setTimeout(function(){
+					websocket.send("哈哈大爷的测试数据"); 
+				},7000);				 
+			} 
+			function websocketOpenClose(event) { 
+				console.log("Disconnected");
+			} 
+			function websocketMessage(event) { 
+				document.body.innerHTML = 'Retrieved data from server: ' + event.data;
+				console.log('Retrieved data from server: ' + event.data); 
+			} 
+			function websocketError(event) { 
+				console.log('Error occured: ' + event.data);
+			}
+			websocket.onopen = websocketOpen; 
+			websocket.onclose = websocketOpenClose; 
+			websocket.onmessage = websocketMessage; 
+			websocket.onerror = websocketError; 		
+		</script>		
+	</body>
+</html>
+
+
