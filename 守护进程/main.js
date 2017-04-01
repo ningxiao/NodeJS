@@ -17,9 +17,9 @@ process.on('uncaughtException', function(error) {
 const server = http.createServer(function(req, res) {
 	res.setHeader('Set-Cookie', ['name=ningxiao', 'server=vnode/1.0.1']);
 	res.writeHead(200, {
-		'Content-Type': 'text/plain'
+		'Content-Type': 'text/plain; charset=utf-8'
 	});
-	res.write('callback({"status": 200,"data":"9968"})');
+	res.write(`callback({"status": 200,"pid":"进程->${process.pid}"})`);
 	res.end();
 });
 
