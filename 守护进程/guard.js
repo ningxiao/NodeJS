@@ -59,6 +59,9 @@ function restart() {
 			case "restart":
 				restart();
 				break;
+			case "list":
+				console.log(JSON.parse(fs.readFileSync("./config/config.json", "utf-8")));
+				break;
 			default:
 		};
 	};
