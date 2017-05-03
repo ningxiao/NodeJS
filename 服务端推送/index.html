@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>文件更新推送</title>
+    </head>
+    <body>
+    <script type="text/javascript">
+        "use strict";
+        const evs = new EventSource('/msg');
+        evs.addEventListener("open", () => {
+            console.log("推送打开");
+        }, false);
+        evs.addEventListener('add', (ev) => {
+            console.log("add","--->",ev.data);
+        }, false);
+        evs.addEventListener('remove', (ev) => {
+           console.log("remove","--->",ev.data);
+        }, false);
+        evs.addEventListener("error", (err) => {
+            console.log("推送异常", err);
+            evs.close();
+        }, false);
+        evs.addEventListener("message", (ev) => {
+            console.log(ev.data);
+        }, false);
+    </script>
+    </body>
+</html>
