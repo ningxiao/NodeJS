@@ -1,218 +1,437 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-        <meta name="keywords" content="名侦探柯南国语版,,名侦探柯南国语版在线观看" />
-        <meta name="description" content="名侦探柯南国语版，：名侦探柯南》日本国宝级漫画家青山刚昌作品，连载于周刊少年Sunday（周刊少年サンデー），日本小学馆发行的综合性少年漫画杂志。 　　高中生侦探工藤新一..." />
-        <meta name="apple-mobile-web-app-status-bar-style" content=" black ">
-        <meta name="apple-mobile-web-app-title" content="">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="format-detection" content="telephone=no">
-        <title><? if (list) { ?><?= list.title ?><? } ?></title>
-        <link rel="apple-touch-icon-precomposed" href="http://staticm.hd.baofeng.com/images/share/logo57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://staticm.hd.baofeng.com/images/share/logo114.png" />
-        <div style="display: none;">
-            <img src="http://staticm.hd.baofeng.com/images/share/logo300.jpg"/>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta name="keywords" content="名侦探柯南国语版,,名侦探柯南国语版在线观看" />
+    <meta name="description" content="名侦探柯南国语版，：名侦探柯南》日本国宝级漫画家青山刚昌作品，连载于周刊少年Sunday（周刊少年サンデー），日本小学馆发行的综合性少年漫画杂志。 　　高中生侦探工藤新一..." />
+    <meta name="apple-mobile-web-app-status-bar-style" content=" black ">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        <? if (list) { ?>
+            <?= list.title ?>
+                <? } ?>
+    </title>
+    <link rel="apple-touch-icon-precomposed" href="http://staticm.hd.baofeng.com/images/share/logo57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://staticm.hd.baofeng.com/images/share/logo114.png" />
+    <div style="display: none;">
+        <img src="http://staticm.hd.baofeng.com/images/share/logo300.jpg" />
+    </div>
+    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="http://staticm.hd.baofeng.com/script/libs/flexible.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://staticm.hd.baofeng.com/style/play.min.css?t=1462241118">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?8a388c6d704406084886f9de425484a9";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <script src="http://staticm.hd.baofeng.com/script/libs/logger.min.js"></script>
+    <section>
+        <header>
+            <div class="hd-head">
+                <h1><a href="/" title="暴风影音">暴风影音</a></h1>
+                <div class="head-users"><span id="searchbutton" class="search-button"></span><span id="menubutton" data-type="poll" data-auto="auto" class="menu-button"></span></div>
+                <ul id="menulist" class="menu-list" style=" display:none;">
+                    <li><a href="/" title="">首页</a></li>
+                    <li><a href="/movie/54/list-ishot-1-sid-1-p-1.shtml" title="">电影</a></li>
+                    <li><a href="/tv/82/list-type-2-ishot-1-sid-0-p-1.shtml" title="">电视剧</a></li>
+                    <li><a href="/enc/444/list-type-4-ishot-1-sid-1-p-1.shtml" title="">综艺</a></li>
+                    <li><a href="/comic/924/list-type-3-ishot-1-sid-1-p-1.shtml" title="">动漫</a></li>
+                    <li><a href="/micvideo.html" title="">资讯</a></li>
+                    <li><a href="/edu/881/list-type-66-ishot-1-sid-1-p-1.shtml" title="">教育</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="searchbar" class="search-popup" style="display: none;">
+            <form action="http://hd.baofeng.com/q_JUU1JTg4JTk4JUU1JUJFJUI3JUU1JThEJThF" method="get" target="" autocomplete="off">
+                <div class="search-wrap">
+                    <div class="search-wrap-box">
+                        <input data-type="input" type="search" placeholder="请输入搜索内容" />
+                        <span data-type="close" class="i-clear"></span>
+                    </div>
+                    <button data-type="submit" class="s-btn" type="submit">取消</button>
+                </div>
+            </form>
+            <ul class="search-layer"></ul>
         </div>
-        <link rel="apple-touch-icon" href="/favicon.ico">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <script src="http://staticm.hd.baofeng.com/script/libs/flexible.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="http://192.168.203.71/style/play.min.css?t=1462241118">
-        <script>
-            var _hmt = _hmt || [];
-            (function() {
-              var hm = document.createElement("script");
-              hm.src = "//hm.baidu.com/hm.js?8a388c6d704406084886f9de425484a9";
-              var s = document.getElementsByTagName("script")[0];
-              s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
-    </head>
-    <body>
-        <script src="http://192.168.203.71/script/libs/logger.min.js"></script>
-        <section>
-            <header>
-                <div class="hd-head">
-                    <h1><a href="/"  title="暴风影音">暴风影音</a></h1>
-                    <div class="head-users"><span id="searchbutton" class="search-button"></span><span id="menubutton" data-type="poll" data-auto="auto" class="menu-button"></span></div>
-                    <ul id="menulist" class="menu-list" style=" display:none;">
-                        <li><a href="/"  title="">首页</a></li>
-                        <li><a href="/movie/54/list-ishot-1-sid-1-p-1.shtml"  title="">电影</a></li>
-                        <li><a href="/tv/82/list-type-2-ishot-1-sid-0-p-1.shtml"  title="">电视剧</a></li>
-                        <li><a href="/enc/444/list-type-4-ishot-1-sid-1-p-1.shtml"  title="">综艺</a></li>
-                        <li><a href="/comic/924/list-type-3-ishot-1-sid-1-p-1.shtml"  title="">动漫</a></li>
-                        <li><a href="/micvideo.html"  title="">资讯</a></li>
-                        <li><a href="/edu/881/list-type-66-ishot-1-sid-1-p-1.shtml"  title="">教育</a></li>
-                    </ul>
+        <div class="hd-play-box">
+            <div class="hd-video-player">
+                <div class="video-tips-box">
+                    <p class="tips-text" id="tipsvideo"></p>
                 </div>
-            </header>
-            <div id="searchbar" class="search-popup" style="display: none;">
-                <form action="http://hd.baofeng.com/q_JUU1JTg4JTk4JUU1JUJFJUI3JUU1JThEJThF" method="get" target="" autocomplete="off">
-                    <div class="search-wrap">
-                        <div class="search-wrap-box">
-                            <input data-type="input" type="search" placeholder="请输入搜索内容"/>
-                            <span data-type="close" class="i-clear"></span>
-                        </div>
-                        <button data-type="submit" class="s-btn" type="submit">取消</button>
-                    </div>
-                </form>
-                <ul class="search-layer"></ul>
-            </div>
-            <div class="hd-play-box">
-                <div class="hd-video-player">
-                    <div class="video-tips-box">
-                        <p class="tips-text" id="tipsvideo"></p>
-                    </div>
-                    <div id="videoplayer" class="video-player">
-                        <p class="video-default-pic"><img src="http://staticm.hd.baofeng.com/images/videodefault.jpg"></p>
-                    </div>
-                </div>
-                <div class="video-info"><div id="videoinfo"><em data-type="likeup" data-sum="0" class="like">0</em><em data-type="likedown" data-sum="0" class="dislike">0</em></div><em id="sharebutton" data-type="poll" class="share"><div class="play-share-con" id="shareview"></div></em></div>
-            </div>
-            <div class="movie-info-box">
-                <div class="plot-info-box">
-                    <div class="plot-info-part">
-                        <p class="show-more-icon"><i id="arrowbutton" data-type="poll" class="arrow-down"></i></p>
-                        <p class="plot-big-tit"><em>名侦探柯南国语版</em></p>
-                        <p><span>类型：</span>推理</p>
-                                            </div>
-                    <div id="infohide" class="plot-info-hide">
-                        <p><span>地区：</span>日本</p>
-                        <p class="plot-text"><span>简介：</span>名侦探柯南》日本国宝级漫画家青山刚昌作品，连载于周刊少年Sunday（周刊少年サンデー），日本小学馆发行的综合性少年漫画杂志。 　　高中生侦探工藤新一，被称为“日本警察的救世主”、“平成年代的福尔摩斯”、“关东的名侦探”。一次在与青梅竹马毛利兰去游乐园游玩时，发现两个行动诡异的黑衣人。工藤新一跟踪他们直到交易现场，另一个黑衣人琴酒趁其不注意从后面将他一棒击倒，并灌下一种名为APTX-4869的神秘毒药企图杀他灭口，但因为副作用他的身体竟回到发育期的孩童状态。考虑到要是黑衣人知道他还活着，必将使周围的亲朋好友受到牵连，于是工藤新一化名为“江户川柯南”寄住在毛利兰的家中，想借助其父亲毛利小五郎来找寻黑衣人。不料小五郎不但对其没有帮助，还是个冒失的迷糊侦探。所以发生案件后，柯南就用阿笠博士发明的手表型麻醉枪让小五郎睡着，接着用蝴蝶结型变声器模仿他的声音来进行推理，解决了许多连警方都束手无策的案件。同时也结交了许多同伴，也一直寻找着黑衣组织的人的下落，希望有朝一日将其绳之以法，并变回原来的样子……</p>
-                    </div>
-                </div>
-                <div id="movieview"></div>
-            </div>
-            <div id="channelswitch" class="hd-channel" data-pages="6" data-paces="caching.wnews" style="display: none;">
-                <h3 class="hd-channel-tit">热播推荐</h3>
-                <div class="hd-channel-box">
-                    <ul class="hd-channel-list hd-channel-list3" data-view="channel_tmpl"></ul>
-                  <span class="exchange-btn"><em data-type="tap">换一批<i data-type="tap" class="exchange-icon"></i></em></span>
+                <div id="videoplayer" class="video-player">
+                    <p class="video-default-pic"><img src="http://staticm.hd.baofeng.com/images/videodefault.jpg"></p>
                 </div>
             </div>
-            <div class="hd-channel" id="commentsbox" style="display: none;">
-                <div class="comments-box">
-                    <h3 class="comments-tit">评论</h3>
-                    <p class="comments-num">共0条评论</p>
-                    <div id="commentslist"></div>
+            <div class="video-info">
+                <div id="videoinfo"><em data-type="likeup" data-sum="0" class="like">0</em><em data-type="likedown" data-sum="0" class="dislike">0</em></div><em id="sharebutton" data-type="poll" class="share"><div class="play-share-con" id="shareview"></div></em></div>
+        </div>
+        <div class="movie-info-box">
+            <div class="plot-info-box">
+                <div class="plot-info-part">
+                    <p class="show-more-icon"><i id="arrowbutton" data-type="poll" class="arrow-down"></i></p>
+                    <p class="plot-big-tit"><em>名侦探柯南国语版</em></p>
+                    <p><span>类型：</span>推理</p>
                 </div>
-               <span id="ajaxbutton" data-type="jsonp" data-count="10" class="lookmore-btn"><em>查看更多<i class="lookmore-icon"></i></em></span>
-            </div>
-            <footer>
-                <a href="http://home.baofeng.com/licence/icp.html" target="_blank">京ICP证070364号</a>
-            </footer>
-            <div id="appview" class="hd-download-player">
-                <div class="download-details">
-                    <p class="close-btn" data-type="remove">关闭</p>
-                    <div class="download-con">
-                        <h2>
-                            <a href="http://m.baofeng.com"></a>
-                        </h2>
-                        <a id="appload" href="javascript:void(0);" class="app-download">立即下载</a>
-                    </div>
+                <div id="infohide" class="plot-info-hide">
+                    <p><span>地区：</span>日本</p>
+                    <p class="plot-text"><span>简介：</span>名侦探柯南》日本国宝级漫画家青山刚昌作品，连载于周刊少年Sunday（周刊少年サンデー），日本小学馆发行的综合性少年漫画杂志。 　　高中生侦探工藤新一，被称为“日本警察的救世主”、“平成年代的福尔摩斯”、“关东的名侦探”。一次在与青梅竹马毛利兰去游乐园游玩时，发现两个行动诡异的黑衣人。工藤新一跟踪他们直到交易现场，另一个黑衣人琴酒趁其不注意从后面将他一棒击倒，并灌下一种名为APTX-4869的神秘毒药企图杀他灭口，但因为副作用他的身体竟回到发育期的孩童状态。考虑到要是黑衣人知道他还活着，必将使周围的亲朋好友受到牵连，于是工藤新一化名为“江户川柯南”寄住在毛利兰的家中，想借助其父亲毛利小五郎来找寻黑衣人。不料小五郎不但对其没有帮助，还是个冒失的迷糊侦探。所以发生案件后，柯南就用阿笠博士发明的手表型麻醉枪让小五郎睡着，接着用蝴蝶结型变声器模仿他的声音来进行推理，解决了许多连警方都束手无策的案件。同时也结交了许多同伴，也一直寻找着黑衣组织的人的下落，希望有朝一日将其绳之以法，并变回原来的样子……</p>
                 </div>
             </div>
-            <div id="gotop" class="hd-backup">
-                <em data-type="tap" class="backup-icon"></em>
+            <div id="movieview"></div>
+        </div>
+        <div id="channelswitch" class="hd-channel" data-pages="6" data-paces="caching.wnews" style="display: none;">
+            <h3 class="hd-channel-tit">热播推荐</h3>
+            <div class="hd-channel-box">
+                <ul class="hd-channel-list hd-channel-list3" data-view="channel_tmpl"></ul>
+                <span class="exchange-btn"><em data-type="tap">换一批<i data-type="tap" class="exchange-icon"></i></em></span>
             </div>
-        </section>
-        <script id="comments_tmpl" type="text/html">
-            <%for(var i=0,len = data.length;i<len;i++){%>
-                <li>
-                    <div class="comments-user-head"><img src="<%=data[i].faceimg%>"></div>
-                    <div class="comments-info">
-                        <p class="comments-users-info"><em class="comments-user-name"><%=data[i].username%></em><em class="comments-time"><%=data[i].addtime%></em></p>
-                        <p class="comments-details"><%=data[i].yestxt%></p>
-                    </div>
-                </li>
+        </div>
+        <div class="hd-channel" id="commentsbox" style="display: none;">
+            <div class="comments-box">
+                <h3 class="comments-tit">评论</h3>
+                <p class="comments-num">共0条评论</p>
+                <div id="commentslist"></div>
+            </div>
+            <span id="ajaxbutton" data-type="jsonp" data-count="10" class="lookmore-btn"><em>查看更多<i class="lookmore-icon"></i></em></span>
+        </div>
+        <footer>
+            <a href="http://home.baofeng.com/licence/icp.html" target="_blank">京ICP证070364号</a>
+        </footer>
+        <div id="appview" class="hd-download-player">
+            <div class="download-details">
+                <p class="close-btn" data-type="remove">关闭</p>
+                <div class="download-con">
+                    <h2>
+                        <a href="http://m.baofeng.com"></a>
+                    </h2>
+                    <a id="appload" href="javascript:void(0);" class="app-download">立即下载</a>
+                </div>
+            </div>
+        </div>
+        <div id="gotop" class="hd-backup">
+            <em data-type="tap" class="backup-icon"></em>
+        </div>
+    </section>
+    <script id="comments_tmpl" type="text/html">
+        <%for(var i=0,len = data.length;i<len;i++){%>
+            <li>
+                <div class="comments-user-head"><img src="<%=data[i].faceimg%>"></div>
+                <div class="comments-info">
+                    <p class="comments-users-info"><em class="comments-user-name"><%=data[i].username%></em><em class="comments-time"><%=data[i].addtime%></em></p>
+                    <p class="comments-details">
+                        <%=data[i].yestxt%>
+                    </p>
+                </div>
+            </li>
             <%}%>
-        </script>
-        <script id="album_tmpl" type="text/html">
-            <div class="movie-num-sum">
-                <p class="total-num"><%=uptitle%></p>
-                <nav class="total-num-division">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <% for(var key in pagemap){%>
-                               <span class="swiper-slide" data-index="<%=pagemap[key]%>"><%=key%></span>
+    </script>
+    <script id="album_tmpl" type="text/html">
+        <div class="movie-num-sum">
+            <p class="total-num">
+                <%=uptitle%>
+            </p>
+            <nav class="total-num-division">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <% for(var key in pagemap){%>
+                            <span class="swiper-slide" data-index="<%=pagemap[key]%>"><%=key%></span>
                             <%}%>
-                        </div>
                     </div>
-                </nav>
-            </div>
-            <%classname = 'movie-num-list'%>
+                </div>
+            </nav>
+        </div>
+        <%classname = 'movie-num-list'%>
             <%if(channel==4 && vsubtitle){%>
                 <%classname = 'movie-num-list movie-text-list'%>
-            <%}%>
-            <ul id="dramalist" class="<%=classname%>"></ul>
-        </script>
-        <script id="drama_tmpl" type="text/html">
-            <%list = videolist[curpage]%>
+                    <%}%>
+                        <ul id="dramalist" class="<%=classname%>"></ul>
+    </script>
+    <script id="drama_tmpl" type="text/html">
+        <%list = videolist[curpage]%>
             <%for(var i=0,len = list.length;i<len;i++){%>
                 <%data = list[i],index = data.GetIndex(),classname = 'all-line'%>
-                <li class="<%=(isdraw && curindex == i)?'cur':''%>">
-                    <%if(data.GetPreview()){%>
-                        <%classname = 'all-line icon-yug'%>
-                    <%}else if(data.GetNew()){%>
-                        <%classname = 'all-line icon-new'%>
+                    <li class="<%=(isdraw && curindex == i)?'cur':''%>">
+                        <%if(data.GetPreview()){%>
+                            <%classname = 'all-line icon-yug'%>
+                                <%}else if(data.GetNew()){%>
+                                    <%classname = 'all-line icon-new'%>
+                                        <%}%>
+                                            <span data-vindex="<%=index%>" class="<%=classname%>"></span>
+                                            <%if(channel==4 && vsubtitle){%>
+                                                <%=data.GetTitle()%>
+                                                    <%}else{%>
+                                                        <%=data.GetLocation()%>
+                                                            <%}%>
+                    </li>
                     <%}%>
-                    <span data-vindex="<%=index%>" class="<%=classname%>"></span>
-                    <%if(channel==4 && vsubtitle){%>
-                        <%=data.GetTitle()%>
-                    <%}else{%>
-                        <%=data.GetLocation()%>
-                    <%}%>
-                </li>
-            <%}%>
-        </script>
-        <script id="share_tmpl" type="text/html">
-            <div id="bdshare" class="play-share-detail bdshare_t bds_tools get-codes-bdshare" data='{"url":"http://m.baofeng.com/play/176/play-789176.html","pic":"http://box.bfimg.com/img/176/789176/51_270*340.jpg","text": "我正在暴风极致影院观看：名侦探柯南国语版，很赞！"}'>
-                <a href="javascript:void(0);" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                <a href="javascript:void(0);" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                <a href="javascript:void(0);" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-            </div>
-        </script>
-        <script id="channel_tmpl" type="text/html">
-            <% for(var i=0,len = comments.length;i<len;i++){%>
-                <%data = comments[i]%>
+    </script>
+    <script id="share_tmpl" type="text/html">
+        <div id="bdshare" class="play-share-detail bdshare_t bds_tools get-codes-bdshare" data='{"url":"http://m.baofeng.com/play/176/play-789176.html","pic":"http://box.bfimg.com/img/176/789176/51_270*340.jpg","text": "我正在暴风极致影院观看：名侦探柯南国语版，很赞！"}'>
+            <a href="javascript:void(0);" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="javascript:void(0);" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+            <a href="javascript:void(0);" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+        </div>
+    </script>
+    <script id="channel_tmpl" type="text/html">
+        <% for(var i=0,len = comments.length;i<len;i++){%>
+            <%data = comments[i]%>
                 <li>
                     <div class="film-box">
                         <div class="film-pic">
                             <p class="film-default"></p>
                             <div class="pic" style="background-image:url(<%=data.img%>);">
                                 <%if(data.info){%>
-                                    <p class="film-time-layer"><%=data.info%></p>
-                                <%}%>
+                                    <p class="film-time-layer">
+                                        <%=data.info%>
+                                    </p>
+                                    <%}%>
                             </div>
                         </div>
                         <div class="film-text">
-                            <h3><%=data.title%></h3>
-                            <h4><%=data.comment%></h4>
+                            <h3>
+                                <%=data.title%>
+                            </h3>
+                            <h4>
+                                <%=data.comment%>
+                            </h4>
                         </div>
-                       <a href="<%=data.url%>" class="all-film"></a>
+                        <a href="<%=data.url%>" class="all-film"></a>
                     </div>
                 </li>
-            <%}%>
-        </script>
-        <!--返回顶部end-->
-        <script type="text/javascript">
-            //var movie_detail= {"info_box_tpl":"7","info_channel":"3","info_id":"789176","info_wid":"13","info_score":"9.4","info_scc":"7865","info_year":"2015","info_series_id":[],"info_people":[{"type_id":"23","type_name":"\u4f5c\u8005","people":[{"id":"702756","name":"\u9752\u5c71\u521a\u660c"}]},{"type_id":"22","type_name":"\u58f0\u4f18","people":[{"id":"703265","name":"\u51af\u53cb\u8587"},{"id":"703411","name":"\u5415\u4f69\u7389"}]}],"info_shortcomment":[{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u7ae5\u5e74\u56de\u5fc6\u5416!!! \u5f53\u5e74\u8d85\u7ea7\u5d07\u62dc\u7684\u5bf9\u8c61\u5462!\u5982\u4eca\u770b\u6765\u67d0\u4e9b\u903b\u8f91\u8fd8\u662f\u633a\u7275\u5f3a\u7684,\u53ef\u6574\u4e2a\u8fd8\u662f\u8d85\u7ecf\u5178\u554a!!\u600e\u4e48\u4f1a\u6709\u8fd9\u4e48\u4e30\u5bcc\u7684\u60f3\u8c61\u529b!"},{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u770b\u67ef\u5357\u662f\u4e00\u79cd\u751f\u6d3b\u5fc5\u9700\u54c1\u3002"}],"info_update_text":"\u4e0d\u5b9a\u671f\u66f4\u65b0","info_comment":"\u53f2\u4e0a\u6700\u7ecf\u5178\u7684\u63a8\u7406\u52a8\u753b","info_name":"\u540d\u4fa6\u63a2\u67ef\u5357\u56fd\u8bed\u7248","info_alias":"","info_jianjie":"\u540d\u4fa6\u63a2\u67ef\u5357\u300b\u65e5\u672c\u56fd\u5b9d\u7ea7\u6f2b\u753b\u5bb6\u9752\u5c71\u521a\u660c\u4f5c\u54c1\uff0c\u8fde\u8f7d\u4e8e\u5468\u520a\u5c11\u5e74Sunday\uff08\u5468\u520a\u5c11\u5e74\u30b5\u30f3\u30c7\u30fc\uff09\uff0c\u65e5\u672c\u5c0f\u5b66\u9986\u53d1\u884c\u7684\u7efc\u5408\u6027\u5c11\u5e74\u6f2b\u753b\u6742\u5fd7\u3002 \u3000\u3000\u9ad8\u4e2d\u751f\u4fa6\u63a2\u5de5\u85e4\u65b0\u4e00\uff0c\u88ab\u79f0\u4e3a\u201c\u65e5\u672c\u8b66\u5bdf\u7684\u6551\u4e16\u4e3b\u201d\u3001\u201c\u5e73\u6210\u5e74\u4ee3\u7684\u798f\u5c14\u6469\u65af\u201d\u3001\u201c\u5173\u4e1c\u7684\u540d\u4fa6\u63a2\u201d\u3002\u4e00\u6b21\u5728\u4e0e\u9752\u6885\u7af9\u9a6c\u6bdb\u5229\u5170\u53bb\u6e38\u4e50\u56ed\u6e38\u73a9\u65f6\uff0c\u53d1\u73b0\u4e24\u4e2a\u884c\u52a8\u8be1\u5f02\u7684\u9ed1\u8863\u4eba\u3002\u5de5\u85e4\u65b0\u4e00\u8ddf\u8e2a\u4ed6\u4eec\u76f4\u5230\u4ea4\u6613\u73b0\u573a\uff0c\u53e6\u4e00\u4e2a\u9ed1\u8863\u4eba\u7434\u9152\u8d81\u5176\u4e0d\u6ce8\u610f\u4ece\u540e\u9762\u5c06\u4ed6\u4e00\u68d2\u51fb\u5012\uff0c\u5e76\u704c\u4e0b\u4e00\u79cd\u540d\u4e3aAPTX-4869\u7684\u795e\u79d8\u6bd2\u836f\u4f01\u56fe\u6740\u4ed6\u706d\u53e3\uff0c\u4f46\u56e0\u4e3a\u526f\u4f5c\u7528\u4ed6\u7684\u8eab\u4f53\u7adf\u56de\u5230\u53d1\u80b2\u671f\u7684\u5b69\u7ae5\u72b6\u6001\u3002\u8003\u8651\u5230\u8981\u662f\u9ed1\u8863\u4eba\u77e5\u9053\u4ed6\u8fd8\u6d3b\u7740\uff0c\u5fc5\u5c06\u4f7f\u5468\u56f4\u7684\u4eb2\u670b\u597d\u53cb\u53d7\u5230\u7275\u8fde\uff0c\u4e8e\u662f\u5de5\u85e4\u65b0\u4e00\u5316\u540d\u4e3a\u201c\u6c5f\u6237\u5ddd\u67ef\u5357\u201d\u5bc4\u4f4f\u5728\u6bdb\u5229\u5170\u7684\u5bb6\u4e2d\uff0c\u60f3\u501f\u52a9\u5176\u7236\u4eb2\u6bdb\u5229\u5c0f\u4e94\u90ce\u6765\u627e\u5bfb\u9ed1\u8863\u4eba\u3002\u4e0d\u6599\u5c0f\u4e94\u90ce\u4e0d\u4f46\u5bf9\u5176\u6ca1\u6709\u5e2e\u52a9\uff0c\u8fd8\u662f\u4e2a\u5192\u5931\u7684\u8ff7\u7cca\u4fa6\u63a2\u3002\u6240\u4ee5\u53d1\u751f\u6848\u4ef6\u540e\uff0c\u67ef\u5357\u5c31\u7528\u963f\u7b20\u535a\u58eb\u53d1\u660e\u7684\u624b\u8868\u578b\u9ebb\u9189\u67aa\u8ba9\u5c0f\u4e94\u90ce\u7761\u7740\uff0c\u63a5\u7740\u7528\u8774\u8776\u7ed3\u578b\u53d8\u58f0\u5668\u6a21\u4eff\u4ed6\u7684\u58f0\u97f3\u6765\u8fdb\u884c\u63a8\u7406\uff0c\u89e3\u51b3\u4e86\u8bb8\u591a\u8fde\u8b66\u65b9\u90fd\u675f\u624b\u65e0\u7b56\u7684\u6848\u4ef6\u3002\u540c\u65f6\u4e5f\u7ed3\u4ea4\u4e86\u8bb8\u591a\u540c\u4f34\uff0c\u4e5f\u4e00\u76f4\u5bfb\u627e\u7740\u9ed1\u8863\u7ec4\u7ec7\u7684\u4eba\u7684\u4e0b\u843d\uff0c\u5e0c\u671b\u6709\u671d\u4e00\u65e5\u5c06\u5176\u7ef3\u4e4b\u4ee5\u6cd5\uff0c\u5e76\u53d8\u56de\u539f\u6765\u7684\u6837\u5b50\u2026\u2026","info_img":"http:\/\/box.bfimg.com\/img\/176\/789176\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[],"info_area_catlog":[{"areaid":"16","area":"\u65e5\u672c","categoryid":3008,"category":"\u63a8\u7406","typeid":"3","typename":"\u52a8\u6f2b","cateid":"199"}],"info_pianyuan":[{"aid":"141304","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":803,"pagemap":{"803-774":1,"773-744":2,"743-714":3,"713-684":4,"683-654":5,"653-624":6,"623-594":7,"593-564":8,"563-534":9,"533-504":10,"503-474":11,"473-444":12,"443-414":13,"413-384":14,"383-354":15,"353-324":16,"323-294":17,"293-264":18,"263-234":19,"233-204":20,"203-174":21,"173-144":22,"143-114":23,"113-84":24,"83-54":25,"53-24":26,"23-1":27}},{"aid":"141332","hd_type":"240P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":803,"pagemap":{"803-774":1,"773-744":2,"743-714":3,"713-684":4,"683-654":5,"653-624":6,"623-594":7,"593-564":8,"563-534":9,"533-504":10,"503-474":11,"473-444":12,"443-414":13,"413-384":14,"383-354":15,"353-324":16,"323-294":17,"293-264":18,"263-234":19,"233-204":20,"203-174":21,"173-144":22,"143-114":23,"113-84":24,"83-54":25,"53-24":26,"23-1":27}}],"info_complatestatus":"1","info_tpl_id":0,"info_subscibe":2,"info_share":1,"info_shortcut":1,"info_posters":{"a":[{"25183":"w"},{"25182":"w"},{"25181":"w"}],"w":[25183,25182,25181],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"789176"};
-            //var movie_detail= {"info_box_tpl":"7","info_channel":"66","info_id":"780281","info_wid":"13","info_score":"8","info_scc":"644","info_year":"2014","info_series_id":{"1":["286","280"],"2":["286","280"],"3":["286","280"],"8":["286","280"]},"info_people":[],"info_shortcomment":[{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u5e7c\u513f\u76ca\u667a\u513f\u6b4c\uff0c\u5c0f\u82f9\u679c\u6b4c\u66f2\u513f\u7ae5\u7248\u3002"}],"info_update_text":"","info_comment":"\u52a8\u611f\u65f6\u5c1a\u513f\u6b4c","info_name":"\u5c0f\u82f9\u679c\u513f\u6b4c","info_alias":"","info_jianjie":"\u5c0f\u82f9\u679c\u513f\u6b4c\u89c6\u9891,\u662f\u5b9d\u5b9d\u5988\u5988\u6700\u559c\u6b22\u7684\u513f\u6b4c\u3002","info_img":"http:\/\/box.bfimg.com\/img\/281\/780281\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[],"info_area_catlog":[{"areaid":"45","area":"\u5e7c\u513f","categoryid":8001,"category":"\u513f\u6b4c","typeid":"66","typename":"\u6559\u80b2","cateid":"474"}],"info_pianyuan":[{"aid":"119035","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":106,"pagemap":{"1-30":1,"31-60":2,"61-90":3,"91-106":4}},{"aid":"119562","hd_type":"240P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":106,"pagemap":{"1-30":1,"31-60":2,"61-90":3,"91-106":4}}],"info_complatestatus":"2","info_tpl_id":0,"info_subscibe":0,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"780281"};
-            //var movie_detail= {"info_box_tpl":"7","info_channel":"2","info_id":"798050","info_wid":"13","info_score":"8.5","info_scc":"532","info_year":"2016","info_series_id":[],"info_people":[{"type_id":"1","type_name":"\u5bfc\u6f14","people":[{"id":"164788","name":"\u5218\u4fca\u6770"}]},{"type_id":"3","type_name":"\u6f14\u5458","people":[{"id":"712328","name":"\u621a\u8587"},{"id":"708104","name":"\u6731\u6cf3\u817e"},{"id":"774572","name":"\u738b\u8000\u5e86"}]}],"info_shortcomment":[],"info_update_text":"\u5468\u4e00\u81f3\u5468\u516d0\u70b9\u66f4\u65b02\u96c6,\u5468\u65e50\u70b9\u66f4\u65b01\u96c6","info_comment":"\u621a\u8587\u4ea7\u540e\u590d\u51fa\u53d8\u8eab\u675c\u62c9\u62c9","info_name":"\u6211\u662f\u675c\u62c9\u62c9","info_alias":"","info_jianjie":"\u5c81\u6708\u834f\u82d2\uff0c\u675c\u62c9\u62c9\u65e9\u5df2\u4e0d\u662f\u90a3\u53ea\u5347\u804c\u8def\u4e0a\u530d\u5310\u524d\u8fdb\u7684\u804c\u573a\u83dc\u9e1f\uff0c\u5979\u5750\u9547SH\u4eba\u4e8b\u7ecf\u7406\u5df2\u9a7e\u8f7b\u5c31\u719f\uff0c\u4e0d\u65e5\u5c31\u8981\u95ee\u9f0e\u603b\u76d1\u7ea7\u522b\uff1b\u548c\u738b\u4f1f\u7684\u751c\u871c\u604b\u60c5\u74dc\u719f\u8482\u843d\uff0c\u9886\u8bc1\u7ed3\u5a5a\u8fc7\u4e0a\u4e86\u5e78\u798f\u7684\u4e8c\u4eba\u4e16\u754c\u3002\r\n\u4e0d\u6599\uff0c\u4e00\u4e2a\u7b80\u76f4\u662f\u4e3a\u675c\u62c9\u62c9\u91cf\u8eab\u5b9a\u505a\u7684\u654c\u4eba\u51ef\u897f\u6a2a\u7a7a\u51fa\u4e16\uff0c\u7a7a\u964d\u516c\u53f8\u548c\u62c9\u62c9\u7ade\u4e89\u4eba\u4e8b\u603b\u76d1\u3002\u51ef\u897f\u4e8c\u5341\u5999\u9f84\uff0c\u4e09\u5341\u5c81\u7684\u62c9\u62c9\u60e8\u88ab\u5212\u5f52\u8001\u5973\u4eba\u9635\u8425\u3002\u5de5\u4f5c\u4e0a\u72ed\u8def\u76f8\u9022\u52c7\u8005\u80dc\uff0c\u675c\u62c9\u62c9\u51b3\u5b9a\u8d4c\u4e0a\u4e09\u5341\u5c81\u5973\u4eba\u7684\u5c0a\u4e25\u548c\u51ef\u897f\u62fc\u4e86\uff01\u4f46\u8ba9\u675c\u62c9\u62c9\u4e07\u4e07\u6ca1\u60f3\u5230\u7684\u662f\uff0c\u51ef\u897f\u7684\u731b\u70c8\u65cb\u98ce\u7adf\u8fd8\u5e2d\u5377\u5411\u5979\u7684\u5bb6\u5ead\u751f\u6d3b\u3002\r\n\u539f\u6765\u51ef\u897f\u548c\u738b\u5bb6\u76f8\u8bc6\u5df2\u4e45\uff0c\u5979\u662f\u738b\u4f1f\u5988\u7684\u5f97\u610f\u95e8\u751f\uff0c\u738b\u4f1f\u5fc3\u76ee\u4e2d\u7684\u840c\u59b9\u5b50\uff0c\u66f4\u56e0\u7f18\u51d1\u5de7\u642c\u5230\u4e86\u62c9\u62c9\u5bb6\u697c\u4e0b\u3002\u201c\u5600\u5600\u5600\u201d\u8d85\u7ea7\u8b66\u62a5\u62c9\u54cd\u4e86\uff0c\u8bd5\u770b\u5973\u6c49\u5b50\u675c\u62c9\u62c9\u5982\u4f55\u6253\u8d25\u52b2\u654c\uff0c\u675c\u62c9\u62c9\u7684\u804c\u573a\u5a5a\u59fb\u53cc\u91cd\u6218\u6597\u6b22\u7b11\u767b\u573a\uff01","info_img":"http:\/\/box.bfimg.com\/img\/50\/798050\/51_118*157.jpg","info_daoyan_detail":[{"id":"164788","name":"\u5218\u4fca\u6770"}],"info_zhuyan_detail":[{"id":"712328","name":"\u621a\u8587"},{"id":"708104","name":"\u6731\u6cf3\u817e"},{"id":"774572","name":"\u738b\u8000\u5e86"}],"info_area_catlog":[{"areaid":"7","area":"\u5185\u5730","categoryid":2023,"category":"\u7231\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"101"},{"areaid":"7","area":"\u5185\u5730","categoryid":2018,"category":"\u5267\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"104"}],"info_pianyuan":[{"aid":"160574","hd_type":"1080P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":35,"pagemap":{"33-4":1,"3-1":2}},{"aid":"160573","hd_type":"720P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1},{"aid":"160572","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":35,"pagemap":{"33-4":1,"3-1":2}}],"info_complatestatus":"1","info_tpl_id":0,"info_subscibe":2,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"798050"};
-            //var movie_detail= {"info_box_tpl":"7","info_channel":"4","info_id":"788665","info_wid":"13","info_score":"5.4","info_scc":"570","info_year":"2015","info_series_id":[],"info_people":[{"type_id":"19","type_name":"\u4e3b\u6301","people":[{"id":"816208","name":"\u59dc\u6d9b"}]},{"type_id":20,"type_name":"\u5609\u5bbe","people":[]}],"info_shortcomment":[],"info_update_text":"\u6bcf\u5468\u56db\u66f4\u65b01\u671f","info_comment":"\u6700\u65b0\u516b\u5366\u731b\u6599","info_name":"\u5934\u6761\u5927\u731b\u6599","info_alias":"","info_jianjie":"\u6700\u65b0\u9c9c\u7684\u5934\u6761\u8d44\u8baf\uff0c\u6700\u52b2\u7206\u7684\u516b\u5366\u731b\u6599\uff0c\u6700\u7280\u5229\u7684\u5a31\u8bc4\u89c6\u89d2\uff0c\u6700\u63a5\u5730\u6c14\u7684\u5e73\u6c11\u64ad\u62a5\uff0c\u6ca1\u6709\u6211\u4e0d\u77e5\u9053\u7684\uff0c\u53ea\u6709\u4f60\u60f3\u4e0d\u5230\u7684\uff0c\u66b4\u98ce\u5f71\u97f3\u9996\u6863\u5a31\u8bc4\u8d44\u8baf\u8131\u53e3\u79c0\u8282\u76ee\u300a\u5934\u6761\u5927\u731b\u6599\u300b\uff0c\u6bcf\u5468\u4e3a\u60a8\u7cbe\u5fc3\u7504\u9009\u6df1\u6316\u90a3\u4e9b\u4f60\u4e00\u5b9a\u4e0d\u80fd\u9519\u8fc7\u7684\u5934\u6761\u731b\u6599\u3002","info_img":"http:\/\/box.bfimg.com\/img\/165\/788665\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[],"info_area_catlog":[{"areaid":"19","area":"\u5185\u5730","categoryid":4004,"category":"\u5a31\u4e50","typeid":"4","typename":"\u7efc\u827a","cateid":"234"}],"info_pianyuan":[{"aid":"140143","hd_type":"720P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":26,"pagemap":{"26-17":1,"16-7":2,"6-1":3}},{"aid":"140142","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":26,"pagemap":{"26-17":1,"16-7":2,"6-1":3}},{"aid":"140199","hd_type":"240P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":26,"pagemap":{"26-17":1,"16-7":2,"6-1":3}}],"info_complatestatus":"1","info_tpl_id":0,"info_subscibe":2,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"788665"};
-            //var movie_detail= {"info_box_tpl":"5","info_channel":"1","info_id":"796149","info_wid":"13","info_score":"8.7","info_scc":"3233","info_year":"2015","info_series_id":[],"info_people":[{"type_id":"1","type_name":"\u5bfc\u6f14","people":[{"id":"717580","name":"\u7ba1\u864e"}]},{"type_id":"3","type_name":"\u4e3b\u6f14","people":[{"id":"713409","name":"\u51af\u5c0f\u521a"},{"id":"714901","name":"\u5f20\u6db5\u4e88"},{"id":"800495","name":"\u5434\u4ea6\u51e1"},{"id":"737036","name":"\u674e\u6613\u5cf0"},{"id":"86374","name":"\u8bb8\u6674"},{"id":"51208","name":"\u6881\u5929"},{"id":"135112","name":"\u9676\u6cfd\u5982"},{"id":"136297","name":"\u5c39\u529b"},{"id":"782573","name":"\u767d\u4e3e\u7eb2"},{"id":"800736","name":"\u5df4\u56fe"},{"id":"817032","name":"\u738b\u4fca\u51ef"},{"id":"817033","name":"\u6613\u70ca\u5343\u73ba"},{"id":"817034","name":"\u738b\u6e90"},{"id":"826773","name":"\u5c1a\u8bed\u8d24"},{"id":"170004","name":"\u5b81\u6d69"},{"id":"170576","name":"\u5e08\u5c0f\u7ea2"},{"id":"698218","name":"\u5f20\u8bd1"},{"id":"699134","name":"\u5f20\u4e00\u5c71"},{"id":"700766","name":"\u8fde\u5955\u540d"},{"id":"714492","name":"\u5218\u6866"},{"id":"714770","name":"\u6c5f\u73ca"},{"id":"714794","name":"\u8d75\u6bc5"},{"id":"716455","name":"\u6881\u9759"},{"id":"716934","name":"\u4f59\u7691\u78ca"},{"id":"717841","name":"\u4e8e\u548c\u4f1f"},{"id":"736616","name":"\u53f6\u9752"},{"id":"739601","name":"\u80e1\u6653\u5149"},{"id":"741148","name":"\u90ed\u4eac\u98de"},{"id":"759956","name":"\u4efb\u91cd"},{"id":"786081","name":"\u5f20\u9c81\u4e00"},{"id":"791242","name":"\u7ba1\u5b97\u7965"},{"id":"795434","name":"\u9a6c\u5143"},{"id":"796950","name":"\u767d\u7ea2\u6807"},{"id":"800629","name":"\u66f9\u7490"},{"id":"800733","name":"\u9c81\u8bfa"},{"id":"819617","name":"\u5434\u4f18"},{"id":"832357","name":"\u82cf\u5c0f\u660e"},{"id":"832358","name":"\u6c99\u666f\u660c"},{"id":"832359","name":"\u674e\u715c"},{"id":"832360","name":"\u8303\u96ea\u670b"},{"id":"832361","name":"\u7533\u5965"},{"id":"832362","name":"\u90ed\u6653\u5c0f"},{"id":"832363","name":"\u4e01\u6b66"},{"id":"832364","name":"\u5218\u4e91\u9f99"},{"id":"832365","name":"\u675c\u5361\u59ae"},{"id":"832366","name":"\u4f5f\u78ca"},{"id":"832367","name":"\u5434\u8c28\u8a00"},{"id":"832368","name":"\u8d3e\u53cc\u6cfd"},{"id":"832369","name":"\u5f90\u4e50\u540c"}]}],"info_shortcomment":[{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u7236\u5b50\u77db\u76fe\u672c\u8be5\u662f\u65b0\u65e7\u4e24\u4ee3\u4eba\u89c2\u5ff5\u78b0\u649e\u7684\u8f7d\u4f53\uff0c\u5374\u8fd8\u662f\u5728\u51e0\u676f\u9152\u548c\u4e00\u573a\u7236\u5b50\u5bf9\u8c08\u4e2d\u6e29\u548c\u5316\u89e3\uff0c\u597d\u5728\u8001\u5e74\u6f14\u5458\u6f14\u6280\u7206\u68da\uff0c\u5bfc\u6f14\u8fd9\u56de\u53d9\u4e8b\u5f88\u6c89\u7a33\uff0c\u5c0f\u7ec6\u8282\u505a\u5f97\u5f88\u8db3\u5f88\u52a8\u4eba\u3002"},{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u53ef\u4ee5\u60f3\u8c61\uff0c\u8fd9\u4f4d\u201c\u516d\u7237\u201d\u7684\u6c5f\u6e56\u6280\u827a\uff0c\u8ba9\u4ed6\u5728\u8001\u5317\u4eac\u6a2a\u884c\u5927\u6742\u9662\u548c\u90e8\u961f\u5927\u9662\u7684\uff0c\u9760\u7684\u5fc5\u987b\u662f\u8fd9\u4e00\u8eab\u7684\u786c\u6c14\u548c\u4e0d\u5c40\u6c14\u7684\u6001\u5ea6\uff0c\u65e0\u8bba\u662f\u8a00\u8bed\u8fd8\u662f\u5e72\u67b6\uff0c\u90fd\u662f\u4e00\u6837\u5f3a\u786c\u3002"}],"info_update_text":"","info_comment":"\u80e1\u540c\u82f1\u96c4\u7684\u544a\u522b\u6f14\u51fa","info_name":"\u8001\u70ae\u513f","info_alias":"","info_jianjie":"\u66fe\u7ecf\u98ce\u5149\u56db\u4e5d\u57ce\u7684\u8001\u70ae\u516d\u7237\uff0c\u96be\u4ee5\u9002\u5e94\u793e\u4f1a\u5de8\u53d8\uff0c\u86f0\u4f0f\u4e8e\u80e1\u540c\u6df1\u5904\uff0c\u8fc7\u7740\u6e9c\u9e1f\u3001\u7ba1\u95f2\u4e8b\u3001\u53d1\u7262\u9a9a\u7684\u65e0\u804a\u65e5\u5b50\u3002\u67d0\u65e5\uff0c\u516d\u7237\u5f97\u77e5\uff0c\u79bb\u5bb6\u51fa\u8d70\u5df2\u4e45\u7684\u513f\u5b50\u6653\u6ce2\uff0c\u56e0\u4e0e\u4eba\u7ea0\u7eb7\uff0c\u88ab\u65b0\u5d1b\u8d77\u7684\u4e00\u4ee3\u4ee5\u5c0f\u98de\u4e3a\u9996\u5e74\u8f7b\u987d\u4e3b\u975e\u6cd5\u62d8\u7981\u3002\u4e3a\u4e86\u89e3\u6551\u513f\u5b50\uff0c\u516d\u7237\u91cd\u51fa\u6c5f\u6e56\u3002\u516d\u7237\u7528\u81ea\u5df1\u7684\u89c4\u77e9\uff0c\u8bd5\u56fe\u6446\u5e73\u4e8b\u4ef6\uff0c\u5374\u65e0\u5948\u7684\u53d1\u73b0\uff0c\u65e0\u8bba\u662f\u8fd9\u4e2a\u65f6\u4ee3\uff0c\u8fd8\u662f\u81ea\u5df1\u7684\u8eab\u4f53\uff0c\u65e9\u5df2\u4eca\u975e\u6614\u6bd4\u3002 \u4e00\u573a\u65b0\u65e7\u52bf\u529b\u7684\u5bf9\u51b3\u65e0\u6cd5\u907f\u514d...","info_img":"http:\/\/box.bfimg.com\/img\/149\/796149\/51_118*157.jpg","info_daoyan_detail":[{"id":"717580","name":"\u7ba1\u864e"}],"info_zhuyan_detail":[{"id":"713409","name":"\u51af\u5c0f\u521a"},{"id":"714901","name":"\u5f20\u6db5\u4e88"},{"id":"800495","name":"\u5434\u4ea6\u51e1"},{"id":"737036","name":"\u674e\u6613\u5cf0"},{"id":"86374","name":"\u8bb8\u6674"},{"id":"51208","name":"\u6881\u5929"},{"id":"135112","name":"\u9676\u6cfd\u5982"},{"id":"136297","name":"\u5c39\u529b"},{"id":"782573","name":"\u767d\u4e3e\u7eb2"},{"id":"800736","name":"\u5df4\u56fe"},{"id":"817032","name":"\u738b\u4fca\u51ef"},{"id":"817033","name":"\u6613\u70ca\u5343\u73ba"},{"id":"817034","name":"\u738b\u6e90"},{"id":"826773","name":"\u5c1a\u8bed\u8d24"},{"id":"170004","name":"\u5b81\u6d69"},{"id":"170576","name":"\u5e08\u5c0f\u7ea2"},{"id":"698218","name":"\u5f20\u8bd1"},{"id":"699134","name":"\u5f20\u4e00\u5c71"},{"id":"700766","name":"\u8fde\u5955\u540d"},{"id":"714492","name":"\u5218\u6866"},{"id":"714770","name":"\u6c5f\u73ca"},{"id":"714794","name":"\u8d75\u6bc5"},{"id":"716455","name":"\u6881\u9759"},{"id":"716934","name":"\u4f59\u7691\u78ca"},{"id":"717841","name":"\u4e8e\u548c\u4f1f"},{"id":"736616","name":"\u53f6\u9752"},{"id":"739601","name":"\u80e1\u6653\u5149"},{"id":"741148","name":"\u90ed\u4eac\u98de"},{"id":"759956","name":"\u4efb\u91cd"},{"id":"786081","name":"\u5f20\u9c81\u4e00"},{"id":"791242","name":"\u7ba1\u5b97\u7965"},{"id":"795434","name":"\u9a6c\u5143"},{"id":"796950","name":"\u767d\u7ea2\u6807"},{"id":"800629","name":"\u66f9\u7490"},{"id":"800733","name":"\u9c81\u8bfa"},{"id":"819617","name":"\u5434\u4f18"},{"id":"832357","name":"\u82cf\u5c0f\u660e"},{"id":"832358","name":"\u6c99\u666f\u660c"},{"id":"832359","name":"\u674e\u715c"},{"id":"832360","name":"\u8303\u96ea\u670b"},{"id":"832361","name":"\u7533\u5965"},{"id":"832362","name":"\u90ed\u6653\u5c0f"},{"id":"832363","name":"\u4e01\u6b66"},{"id":"832364","name":"\u5218\u4e91\u9f99"},{"id":"832365","name":"\u675c\u5361\u59ae"},{"id":"832366","name":"\u4f5f\u78ca"},{"id":"832367","name":"\u5434\u8c28\u8a00"},{"id":"832368","name":"\u8d3e\u53cc\u6cfd"},{"id":"832369","name":"\u5f90\u4e50\u540c"}],"info_area_catlog":[{"areaid":"1","area":"\u5185\u5730","categoryid":1004,"category":"\u52a8\u4f5c","typeid":"1","typename":"\u7535\u5f71","cateid":"1"},{"areaid":"1","area":"\u5185\u5730","categoryid":1013,"category":"\u5267\u60c5","typeid":"1","typename":"\u7535\u5f71","cateid":"3"}],"info_pianyuan":[{"aid":"157222","hd_type":"1080P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":1,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}},{"aid":"157217","hd_type":"720P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":1,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}},{"aid":"157207","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":1,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}}],"info_complatestatus":0,"info_tpl_id":0,"info_subscibe":0,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","info_trailer":{"aid":"141345","wid":"13","movieid":"789190"},"movieid":"796149"};
-            //var movie_detail= {"info_box_tpl":"0","info_channel":"1","info_id":"791340","info_wid":"13","info_score":"7.7","info_scc":"1261","info_year":"2015","info_series_id":[],"info_people":[{"type_id":"1","type_name":"\u5bfc\u6f14","people":[{"id":"824963","name":"\u7126\u6d0b"}]},{"type_id":"3","type_name":"\u4e3b\u6f14","people":[{"id":"708494","name":"\u5c0f\u6c88\u9633"},{"id":"824957","name":"\u5218\u5c0f\u5149"},{"id":"824958","name":"\u5b8b\u6653\u950b"},{"id":"824959","name":"\u7a0b\u91ce"},{"id":"824960","name":"\u6587\u677e"},{"id":"824961","name":"\u5510\u5a1c"},{"id":"824962","name":"\u5f6d\u79ba\u53b6"}]}],"info_shortcomment":[{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u672c\u5c71\u4f20\u5a92\u9996\u90e8\u4e92\u8054\u7f51\u5927\u7535\u5f71\u300a\u5c71\u70ae\u8fdb\u57ce\u300b\u5c31\u8981\u6765\u88ad\uff0c\u8be5\u7247\u627f\u88ad\u4e86\u4e1c\u5317\u559c\u5267\u7684\u4f20\u7edf\u98ce\u683c\uff0c\u5c24\u5176\u662f\u5ef6\u7eed\u4e86\u672c\u5c71\u559c\u5267\u7684\u7cbe\u9ad3\u6240\u5728\uff0c\u5305\u88b1\u4e00\u4e2a\u63a5\u4e00\u4e2a\uff0c\u7b11\u70b9\u4e00\u7247\u8fde\u4e00\u7247\u3002"}],"info_update_text":"","info_comment":"\u519c\u6751\u4eba\u609f\u51fa\u4eba\u751f\u771f\u8c1b","info_name":"\u5c71\u70ae\u8fdb\u57ce","info_alias":"\u5c71\u70ae\u4f20\u5947\u4e4b\u5c71\u70ae\u8fdb\u57ce","info_jianjie":"\u300a\u5c71\u70ae\u8fdb\u57ce\u300b\u8bb2\u8ff0\u7684\u662f\u51e0\u4e2a\u519c\u6751\u4eba\u8fdb\u57ce\u594b\u6597\u7684\u6545\u4e8b\uff0c\u4eba\u4eba\u90fd\u6709\u4e00\u90e8\u8840\u6cea\u53f2\uff0c\u5176\u5b9e\u4e5f\u662f\u4e00\u90e8\u52b1\u5fd7\u53f2\uff0c\u56db\u4e2a\u4e1c\u5317\u201c\u5c71\u70ae\u201d\u7a0b\u91ce\u3001\u5b8b\u6653\u5cf0\u3001\u5510\u5a1c\u3001\u5f20\u7b11\u83f2\uff0c\u6216\u4e3a\u771f\u7231\u6216\u4e3a\u540d\u5229\u52c7\u95ef\u5317\u4eac\uff0c\u4e00\u8def\u4e0a\u906d\u9047\u5404\u79cd\u5947\u8469\u7684\u4e0d\u9760\u8c31\u65c5\u7a0b\uff0c\u6700\u540e\u7ec8\u4e8e\u627e\u5230\u751f\u6d3b\u771f\u8c1b\u3002","info_img":"http:\/\/box.bfimg.com\/img\/340\/791340\/51_118*157.jpg","info_daoyan_detail":[{"id":"824963","name":"\u7126\u6d0b"}],"info_zhuyan_detail":[{"id":"708494","name":"\u5c0f\u6c88\u9633"},{"id":"824957","name":"\u5218\u5c0f\u5149"},{"id":"824958","name":"\u5b8b\u6653\u950b"},{"id":"824959","name":"\u7a0b\u91ce"},{"id":"824960","name":"\u6587\u677e"},{"id":"824961","name":"\u5510\u5a1c"},{"id":"824962","name":"\u5f6d\u79ba\u53b6"}],"info_area_catlog":[{"areaid":"1","area":"\u5185\u5730","categoryid":1010,"category":"\u559c\u5267","typeid":"1","typename":"\u7535\u5f71","cateid":"2"},{"areaid":"1","area":"\u5185\u5730","categoryid":1013,"category":"\u5267\u60c5","typeid":"1","typename":"\u7535\u5f71","cateid":"3"}],"info_pianyuan":[{"aid":"147015","hd_type":"1080P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}},{"aid":"147011","hd_type":"720P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1},{"aid":"147009","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}},{"aid":"147030","hd_type":"240P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}}],"info_complatestatus":0,"info_tpl_id":0,"info_subscibe":0,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"791340"};
-            var movie_detail= {"info_box_tpl":"0","info_channel":"2","info_id":"104447","info_wid":"13","info_score":"9.2","info_scc":"126","info_year":"2009","info_series_id":[],"info_people":[{"type_id":1,"type_name":"\u5bfc\u6f14","people":[]},{"type_id":"3","type_name":"\u6f14\u5458","people":[{"id":"701196","name":"Aum Patchrapa "},{"id":"701197","name":"\u4e9a\u745e\u514b\u963f\u83ab\u82cf\u5e15\u897f\u745e"}]}],"info_shortcomment":[],"info_update_text":"","info_comment":"\u62ff\u8fc7\u6700\u4f73\u5bfc\u6f14\u5956\u7684\u6cf0\u5267","info_name":"\u6211\u5bb6\u7684\u6076\u9b54\u4e0e\u5929\u4f7f-\u56fd","info_alias":"","info_jianjie":"\u56e0\u4e3a\u552f\u4e00\u7684\u4eb2\u4eba\u5976\u5976\u5165\u9662\uff0cJaew\u88ab\u8feb\u63a5\u53d7\u5976\u5976\u7684\u53ee\u5631\u53bb\u7167\u987eChai\uff0c\u521d\u6b21\u76f8\u89c1\uff0c\u90a3\u4e2a\u8ba8\u538c\u7684\u5bb6\u4f19\u5c31\u4ee4Jaew\u975e\u5e38\u4e0d\u6ee1\uff0c\u53ef\u7531\u4e8e\u5976\u5976\u7684\u5173\u7cfb\uff0c\u5979\u4e0d\u5f97\u4e0d\u7559\u4e0b\uff0c\u806a\u660e\u7684Jaew\u4fbf\u5f00\u59cb\u4e86\u6253\u9020Chai\u7684\u4f1f\u5927\u5de5\u7a0b\u3002\r\n\u4e0e\u6b64\u540c\u65f6\uff0cChai\u4e5f\u8ba8\u538c\u8fd9\u4e2a\u5c0f\u4e2b\u5934\u5bf9\u81ea\u5df1\u751f\u6d3b\u7684\u5e72\u6d89\uff0c\u4ece\u6b64\uff0c\u6bcf\u5929\u4e0eJaew\u7684\u6597\u5fd7\u6597\u6cd5\uff0c\u4fbf\u6210\u4e86\u751f\u6d3b\u7684\u6700\u5927\u4e50\u8da3\u3002\r\n\u7531\u4e8e\u7236\u4eb2Chatwan\u8981\u8ba9Chai\u7ee7\u627f\u516c\u53f8\uff0c\u5f15\u53d1\u4e86\u540e\u6bcdDao\u548c\u7ee7\u5b50Yai\u7684\u5f3a\u70c8\u4e0d\u5b89\uff0c\u751f\u6015\u957f\u4e45\u4ee5\u6765\u7684\u82e6\u5fc3\u7ecf\u8425\u6bc1\u4e8e\u4e00\u65e6\uff0c\u4e8e\u662f\uff0c\u4e00\u573a\u593a\u4ea7\u9634\u8c0b\u6b63\u79d8\u5bc6\u8fdb\u884c\u3002\r\n\u6700\u540eJaew\u80fd\u5426\u6210\u529f\u6539\u9020Chai\uff1fChai\u53c8\u80fd\u5426\u63ed\u7a7f\u540e\u6bcd\u7684\u9634\u8c0b\uff1fJaew\u548cChai\u4e4b\u95f4\u4f55\u53bb\u4f55\u4ece\u5462\uff1f","info_img":"http:\/\/box.bfimg.com\/img\/447\/104447\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[{"id":"701196","name":"Aum Patchrapa "},{"id":"701197","name":"\u4e9a\u745e\u514b\u963f\u83ab\u82cf\u5e15\u897f\u745e"}],"info_area_catlog":[{"areaid":"12","area":"\u6cf0\u56fd","categoryid":2018,"category":"\u5267\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"151"},{"areaid":"12","area":"\u6cf0\u56fd","categoryid":2023,"category":"\u7231\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"152"}],"info_pianyuan":[{"aid":"9804","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":38,"pagemap":{"1A-15B":1,"16A-19B":2}}],"info_complatestatus":"2","info_tpl_id":0,"info_subscibe":0,"info_share":0,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["1","2","3","4","7","8","9","10","11","12","13","14","17","18","21","22","23","24","25","26","27","28","29","30","31","32","33","34","36","37","38","39","40","41","43","44","45"],"info_hd":"1","movieid":"104447"};
-            //var movie_detail= {"info_box_tpl":"0","info_channel":"2","info_id":"104447","info_wid":"13","info_score":"9.2","info_scc":"126","info_year":"2009","info_series_id":[],"info_people":[{"type_id":1,"type_name":"\u5bfc\u6f14","people":[]},{"type_id":"3","type_name":"\u6f14\u5458","people":[{"id":"701196","name":"Aum Patchrapa "},{"id":"701197","name":"\u4e9a\u745e\u514b\u963f\u83ab\u82cf\u5e15\u897f\u745e"}]}],"info_shortcomment":[],"info_update_text":"","info_comment":"\u62ff\u8fc7\u6700\u4f73\u5bfc\u6f14\u5956\u7684\u6cf0\u5267","info_name":"\u6211\u5bb6\u7684\u6076\u9b54\u4e0e\u5929\u4f7f-\u56fd","info_alias":"","info_jianjie":"\u56e0\u4e3a\u552f\u4e00\u7684\u4eb2\u4eba\u5976\u5976\u5165\u9662\uff0cJaew\u88ab\u8feb\u63a5\u53d7\u5976\u5976\u7684\u53ee\u5631\u53bb\u7167\u987eChai\uff0c\u521d\u6b21\u76f8\u89c1\uff0c\u90a3\u4e2a\u8ba8\u538c\u7684\u5bb6\u4f19\u5c31\u4ee4Jaew\u975e\u5e38\u4e0d\u6ee1\uff0c\u53ef\u7531\u4e8e\u5976\u5976\u7684\u5173\u7cfb\uff0c\u5979\u4e0d\u5f97\u4e0d\u7559\u4e0b\uff0c\u806a\u660e\u7684Jaew\u4fbf\u5f00\u59cb\u4e86\u6253\u9020Chai\u7684\u4f1f\u5927\u5de5\u7a0b\u3002\r\n\u4e0e\u6b64\u540c\u65f6\uff0cChai\u4e5f\u8ba8\u538c\u8fd9\u4e2a\u5c0f\u4e2b\u5934\u5bf9\u81ea\u5df1\u751f\u6d3b\u7684\u5e72\u6d89\uff0c\u4ece\u6b64\uff0c\u6bcf\u5929\u4e0eJaew\u7684\u6597\u5fd7\u6597\u6cd5\uff0c\u4fbf\u6210\u4e86\u751f\u6d3b\u7684\u6700\u5927\u4e50\u8da3\u3002\r\n\u7531\u4e8e\u7236\u4eb2Chatwan\u8981\u8ba9Chai\u7ee7\u627f\u516c\u53f8\uff0c\u5f15\u53d1\u4e86\u540e\u6bcdDao\u548c\u7ee7\u5b50Yai\u7684\u5f3a\u70c8\u4e0d\u5b89\uff0c\u751f\u6015\u957f\u4e45\u4ee5\u6765\u7684\u82e6\u5fc3\u7ecf\u8425\u6bc1\u4e8e\u4e00\u65e6\uff0c\u4e8e\u662f\uff0c\u4e00\u573a\u593a\u4ea7\u9634\u8c0b\u6b63\u79d8\u5bc6\u8fdb\u884c\u3002\r\n\u6700\u540eJaew\u80fd\u5426\u6210\u529f\u6539\u9020Chai\uff1fChai\u53c8\u80fd\u5426\u63ed\u7a7f\u540e\u6bcd\u7684\u9634\u8c0b\uff1fJaew\u548cChai\u4e4b\u95f4\u4f55\u53bb\u4f55\u4ece\u5462\uff1f","info_img":"http:\/\/box.bfimg.com\/img\/447\/104447\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[{"id":"701196","name":"Aum Patchrapa "},{"id":"701197","name":"\u4e9a\u745e\u514b\u963f\u83ab\u82cf\u5e15\u897f\u745e"}],"info_area_catlog":[{"areaid":"12","area":"\u6cf0\u56fd","categoryid":2018,"category":"\u5267\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"151"},{"areaid":"12","area":"\u6cf0\u56fd","categoryid":2023,"category":"\u7231\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"152"}],"info_pianyuan":[{"aid":"9804","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":38,"pagemap":{"19B-5A":1,"4B-1A":2}}],"info_complatestatus":"2","info_tpl_id":0,"info_subscibe":0,"info_share":0,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["1","2","3","4","7","8","9","10","11","12","13","14","17","18","21","22","23","24","25","26","27","28","29","30","31","32","33","34","36","37","38","39","40","41","43","44","45"],"info_hd":"1","movieid":"104447"};
-            var caching = {
-                "wnews":[{"title":"\u9b54\u672f\u5feb\u6597: \u7b2c2\u5b63","img":"http:\/\/box.bfimg.com\/img\/30\/781530\/51_150*200.jpg","comment":"\u795e\u79d8\u5927\u76d7\u602a\u76d7\u57fa\u5fb7\u7684\u6545\u4e8b","url":"\/play\/30\/play-781530.html","info":"24\u96c6\u5168"},{"title":"\u732b\u548c\u8001\u9f20","img":"http:\/\/box.bfimg.com\/img\/397\/94397\/51_150*200.jpg","comment":"\u673a\u7075\u8001\u9f20\u4e0e\u7b28\u732b\u7684\u6545\u4e8b","url":"\/play\/397\/play-94397.html","info":"185\u96c6\u5168"},{"title":"\u9b54\u672f\u5feb\u6597: \u7b2c1\u5b63","img":"http:\/\/box.bfimg.com\/img\/262\/761762\/51_150*200.jpg","comment":"\u540d\u4fa6\u63a2\u67ef\u5357\u7684\u524d\u8eab","url":"\/play\/262\/play-761762.html","info":"12\u96c6\u5168"},{"title":"\u5927\u5934\u513f\u5b50\u548c\u5c0f\u5934\u7238\u72382","img":"http:\/\/box.bfimg.com\/img\/157\/166157\/51_150*200.jpg","comment":"\u5feb\u4e50\u7236\u5b50\u7684\u5e78\u798f\u751f\u6d3b","url":"\/play\/157\/play-166157.html","info":"78\u96c6\u5168"},{"title":"\u753b\u6c5f\u6e56\u4e4b\u7075\u4e3b","img":"http:\/\/box.bfimg.com\/img\/356\/789856\/51_150*200.jpg","comment":"\u5927\u578b\u4e09\u7ef4\u6b66\u4fa0\u52a8\u753b","url":"\/play\/356\/play-789856.html","info":"\u66f4\u65b0\u81f330\u96c6"},{"title":"\u732b\u548c\u8001\u9f20\u56db\u5ddd\u65b9\u8a00\u7248","img":"http:\/\/box.bfimg.com\/img\/5\/171005\/51_150*200.jpg","comment":"\u7b11\u5230\u4f60\u7259\u9f7f\u6389\u5149","url":"\/play\/5\/play-171005.html","info":"121\u96c6\u5168"},{"title":"\u795e\u517d\u91d1\u521a","img":"http:\/\/box.bfimg.com\/img\/289\/103789\/51_150*200.jpg","comment":"\u4e2d\u56fd\u7248\u53d8\u5f62\u91d1\u521a","url":"\/play\/289\/play-103789.html","info":"46\u96c6\u5168"},{"title":"\u53ef\u53ef\u5c0f\u7231","img":"http:\/\/box.bfimg.com\/img\/338\/785338\/51_150*200.jpg","comment":"\u8282\u7ea6\u7528\u6c34\u4f4e\u78b3\u751f\u6d3b","url":"\/play\/338\/play-785338.html","info":"255\u96c6\u5168"},{"title":"\u6c6a\u6c6a\u961f\u7acb\u5927\u529f","img":"http:\/\/box.bfimg.com\/img\/205\/795205\/51_150*200.jpg","comment":"\u5356\u840c\u76ca\u667a\u52a8\u753b","url":"\/play\/205\/play-795205.html","info":"26\u96c6\u5168"},{"title":"\u5154\u5c0f\u8d1d\u513f\u6b4c\u5927\u5168","img":"http:\/\/box.bfimg.com\/img\/8\/777008\/51_150*200.jpg","comment":"\u7ecf\u5178\u513f\u6b4c\u5bd3\u6559\u4e8e\u4e50","url":"\/play\/8\/play-777008.html","info":"208\u96c6\u5168"},{"title":"\u5df4\u5566\u5566\u5c0f\u9b54\u4ed9\u4e4b\u5947\u8ff9\u821e\u6b65","img":"http:\/\/box.bfimg.com\/img\/58\/233558\/51_150*200.jpg","comment":"\u63a2\u67e5\u591c\u661f\u5b9d\u76d2","url":"\/play\/58\/play-233558.html","info":"52\u96c6\u5168"},{"title":"\u545c\u54aa123","img":"http:\/\/box.bfimg.com\/img\/203\/795203\/51_150*200.jpg","comment":"\u5b66\u9f84\u524d\u513f\u7ae5\u6559\u80b2\u7247","url":"\/play\/203\/play-795203.html","info":"80\u96c6\u5168"},{"title":"\u94e0\u7532\u52c7\u58eb","img":"http:\/\/box.bfimg.com\/img\/331\/82331\/51_150*200.jpg","comment":"\u4e2d\u56fd\u7248\u201c\u7f8e\u5c11\u5973\u6218\u58eb\u201d","url":"\/play\/331\/play-82331.html","info":"52\u96c6\u5168"},{"title":"\u6234\u62ff\u5965\u7279\u66fc-\u56fd","img":"http:\/\/box.bfimg.com\/img\/164\/170164\/51_150*200.jpg","comment":"\u53f2\u4e0a\u6700\u641e\u7b11\u7684\u5965\u7279\u66fc","url":"\/play\/164\/play-170164.html","info":"51\u96c6\u5168"},{"title":"\u8d5b\u7f57\u5965\u7279\u66fc\u683c\u6597: \u7b2c2\u5b63","img":"http:\/\/box.bfimg.com\/img\/118\/789618\/51_150*200.jpg","comment":"\u8d5b\u7f57\u5965\u7279\u66fc\u683c\u6597","url":"\/play\/118\/play-789618.html","info":"15\u96c6\u5168"},{"title":"\u5c0f\u9a6c\u5b9d\u8389\u53cb\u8c0a\u7684\u9b54\u529b:\u7b2c4\u5b63","img":"http:\/\/box.bfimg.com\/img\/62\/793062\/51_150*200.jpg","comment":"\u8f7b\u677e\u5e7d\u9ed8\u76ca\u667a\u542f\u8fea\u52a8\u753b","url":"\/play\/62\/play-793062.html","info":"26\u96c6\u5168"},{"title":"\u94c1\u7532\u5a01\u866b","img":"http:\/\/box.bfimg.com\/img\/2\/211002\/51_150*200.jpg","comment":"\u9f99\u6218\u9a91\u62ef\u6551\u7532\u866b\u4e16\u754c\u7684\u4f20\u5947\u6545\u4e8b","url":"\/play\/2\/play-211002.html","info":"52\u96c6\u5168"},{"title":"\u51fa\u53d1\u5427\u8fea\u4e9a\u54e5","img":"http:\/\/box.bfimg.com\/img\/200\/795200\/51_150*200.jpg","comment":"\u7cfb\u5217\u63a2\u9669\u52a8\u753b","url":"\/play\/200\/play-795200.html","info":"80\u96c6\u5168"}],
-                "search": [{"name": "欢乐颂"},{"name": "巧虎宝宝版"},{"name": "殊死七日"},{"name": "山海经之赤影传说"},{"name": "美人鱼"}]
-            };
-        </script>
-        <script type="text/javascript" src="http://192.168.203.71/script/play.min.js?t=1462241118"></script>
-        <!--
-        <script type="text/javascript" src="http://staticm.hd.baofeng.com/script/play.min.js?t=1462241118"></script>
-        -->
-    </body>
+                <%}%>
+    </script>
+    <!--返回顶部end-->
+    <script type="text/javascript">
+        //var movie_detail= {"info_box_tpl":"7","info_channel":"3","info_id":"789176","info_wid":"13","info_score":"9.4","info_scc":"7865","info_year":"2015","info_series_id":[],"info_people":[{"type_id":"23","type_name":"\u4f5c\u8005","people":[{"id":"702756","name":"\u9752\u5c71\u521a\u660c"}]},{"type_id":"22","type_name":"\u58f0\u4f18","people":[{"id":"703265","name":"\u51af\u53cb\u8587"},{"id":"703411","name":"\u5415\u4f69\u7389"}]}],"info_shortcomment":[{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u7ae5\u5e74\u56de\u5fc6\u5416!!! \u5f53\u5e74\u8d85\u7ea7\u5d07\u62dc\u7684\u5bf9\u8c61\u5462!\u5982\u4eca\u770b\u6765\u67d0\u4e9b\u903b\u8f91\u8fd8\u662f\u633a\u7275\u5f3a\u7684,\u53ef\u6574\u4e2a\u8fd8\u662f\u8d85\u7ecf\u5178\u554a!!\u600e\u4e48\u4f1a\u6709\u8fd9\u4e48\u4e30\u5bcc\u7684\u60f3\u8c61\u529b!"},{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u770b\u67ef\u5357\u662f\u4e00\u79cd\u751f\u6d3b\u5fc5\u9700\u54c1\u3002"}],"info_update_text":"\u4e0d\u5b9a\u671f\u66f4\u65b0","info_comment":"\u53f2\u4e0a\u6700\u7ecf\u5178\u7684\u63a8\u7406\u52a8\u753b","info_name":"\u540d\u4fa6\u63a2\u67ef\u5357\u56fd\u8bed\u7248","info_alias":"","info_jianjie":"\u540d\u4fa6\u63a2\u67ef\u5357\u300b\u65e5\u672c\u56fd\u5b9d\u7ea7\u6f2b\u753b\u5bb6\u9752\u5c71\u521a\u660c\u4f5c\u54c1\uff0c\u8fde\u8f7d\u4e8e\u5468\u520a\u5c11\u5e74Sunday\uff08\u5468\u520a\u5c11\u5e74\u30b5\u30f3\u30c7\u30fc\uff09\uff0c\u65e5\u672c\u5c0f\u5b66\u9986\u53d1\u884c\u7684\u7efc\u5408\u6027\u5c11\u5e74\u6f2b\u753b\u6742\u5fd7\u3002 \u3000\u3000\u9ad8\u4e2d\u751f\u4fa6\u63a2\u5de5\u85e4\u65b0\u4e00\uff0c\u88ab\u79f0\u4e3a\u201c\u65e5\u672c\u8b66\u5bdf\u7684\u6551\u4e16\u4e3b\u201d\u3001\u201c\u5e73\u6210\u5e74\u4ee3\u7684\u798f\u5c14\u6469\u65af\u201d\u3001\u201c\u5173\u4e1c\u7684\u540d\u4fa6\u63a2\u201d\u3002\u4e00\u6b21\u5728\u4e0e\u9752\u6885\u7af9\u9a6c\u6bdb\u5229\u5170\u53bb\u6e38\u4e50\u56ed\u6e38\u73a9\u65f6\uff0c\u53d1\u73b0\u4e24\u4e2a\u884c\u52a8\u8be1\u5f02\u7684\u9ed1\u8863\u4eba\u3002\u5de5\u85e4\u65b0\u4e00\u8ddf\u8e2a\u4ed6\u4eec\u76f4\u5230\u4ea4\u6613\u73b0\u573a\uff0c\u53e6\u4e00\u4e2a\u9ed1\u8863\u4eba\u7434\u9152\u8d81\u5176\u4e0d\u6ce8\u610f\u4ece\u540e\u9762\u5c06\u4ed6\u4e00\u68d2\u51fb\u5012\uff0c\u5e76\u704c\u4e0b\u4e00\u79cd\u540d\u4e3aAPTX-4869\u7684\u795e\u79d8\u6bd2\u836f\u4f01\u56fe\u6740\u4ed6\u706d\u53e3\uff0c\u4f46\u56e0\u4e3a\u526f\u4f5c\u7528\u4ed6\u7684\u8eab\u4f53\u7adf\u56de\u5230\u53d1\u80b2\u671f\u7684\u5b69\u7ae5\u72b6\u6001\u3002\u8003\u8651\u5230\u8981\u662f\u9ed1\u8863\u4eba\u77e5\u9053\u4ed6\u8fd8\u6d3b\u7740\uff0c\u5fc5\u5c06\u4f7f\u5468\u56f4\u7684\u4eb2\u670b\u597d\u53cb\u53d7\u5230\u7275\u8fde\uff0c\u4e8e\u662f\u5de5\u85e4\u65b0\u4e00\u5316\u540d\u4e3a\u201c\u6c5f\u6237\u5ddd\u67ef\u5357\u201d\u5bc4\u4f4f\u5728\u6bdb\u5229\u5170\u7684\u5bb6\u4e2d\uff0c\u60f3\u501f\u52a9\u5176\u7236\u4eb2\u6bdb\u5229\u5c0f\u4e94\u90ce\u6765\u627e\u5bfb\u9ed1\u8863\u4eba\u3002\u4e0d\u6599\u5c0f\u4e94\u90ce\u4e0d\u4f46\u5bf9\u5176\u6ca1\u6709\u5e2e\u52a9\uff0c\u8fd8\u662f\u4e2a\u5192\u5931\u7684\u8ff7\u7cca\u4fa6\u63a2\u3002\u6240\u4ee5\u53d1\u751f\u6848\u4ef6\u540e\uff0c\u67ef\u5357\u5c31\u7528\u963f\u7b20\u535a\u58eb\u53d1\u660e\u7684\u624b\u8868\u578b\u9ebb\u9189\u67aa\u8ba9\u5c0f\u4e94\u90ce\u7761\u7740\uff0c\u63a5\u7740\u7528\u8774\u8776\u7ed3\u578b\u53d8\u58f0\u5668\u6a21\u4eff\u4ed6\u7684\u58f0\u97f3\u6765\u8fdb\u884c\u63a8\u7406\uff0c\u89e3\u51b3\u4e86\u8bb8\u591a\u8fde\u8b66\u65b9\u90fd\u675f\u624b\u65e0\u7b56\u7684\u6848\u4ef6\u3002\u540c\u65f6\u4e5f\u7ed3\u4ea4\u4e86\u8bb8\u591a\u540c\u4f34\uff0c\u4e5f\u4e00\u76f4\u5bfb\u627e\u7740\u9ed1\u8863\u7ec4\u7ec7\u7684\u4eba\u7684\u4e0b\u843d\uff0c\u5e0c\u671b\u6709\u671d\u4e00\u65e5\u5c06\u5176\u7ef3\u4e4b\u4ee5\u6cd5\uff0c\u5e76\u53d8\u56de\u539f\u6765\u7684\u6837\u5b50\u2026\u2026","info_img":"http:\/\/box.bfimg.com\/img\/176\/789176\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[],"info_area_catlog":[{"areaid":"16","area":"\u65e5\u672c","categoryid":3008,"category":"\u63a8\u7406","typeid":"3","typename":"\u52a8\u6f2b","cateid":"199"}],"info_pianyuan":[{"aid":"141304","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":803,"pagemap":{"803-774":1,"773-744":2,"743-714":3,"713-684":4,"683-654":5,"653-624":6,"623-594":7,"593-564":8,"563-534":9,"533-504":10,"503-474":11,"473-444":12,"443-414":13,"413-384":14,"383-354":15,"353-324":16,"323-294":17,"293-264":18,"263-234":19,"233-204":20,"203-174":21,"173-144":22,"143-114":23,"113-84":24,"83-54":25,"53-24":26,"23-1":27}},{"aid":"141332","hd_type":"240P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":803,"pagemap":{"803-774":1,"773-744":2,"743-714":3,"713-684":4,"683-654":5,"653-624":6,"623-594":7,"593-564":8,"563-534":9,"533-504":10,"503-474":11,"473-444":12,"443-414":13,"413-384":14,"383-354":15,"353-324":16,"323-294":17,"293-264":18,"263-234":19,"233-204":20,"203-174":21,"173-144":22,"143-114":23,"113-84":24,"83-54":25,"53-24":26,"23-1":27}}],"info_complatestatus":"1","info_tpl_id":0,"info_subscibe":2,"info_share":1,"info_shortcut":1,"info_posters":{"a":[{"25183":"w"},{"25182":"w"},{"25181":"w"}],"w":[25183,25182,25181],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"789176"};
+        //var movie_detail= {"info_box_tpl":"7","info_channel":"66","info_id":"780281","info_wid":"13","info_score":"8","info_scc":"644","info_year":"2014","info_series_id":{"1":["286","280"],"2":["286","280"],"3":["286","280"],"8":["286","280"]},"info_people":[],"info_shortcomment":[{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u5e7c\u513f\u76ca\u667a\u513f\u6b4c\uff0c\u5c0f\u82f9\u679c\u6b4c\u66f2\u513f\u7ae5\u7248\u3002"}],"info_update_text":"","info_comment":"\u52a8\u611f\u65f6\u5c1a\u513f\u6b4c","info_name":"\u5c0f\u82f9\u679c\u513f\u6b4c","info_alias":"","info_jianjie":"\u5c0f\u82f9\u679c\u513f\u6b4c\u89c6\u9891,\u662f\u5b9d\u5b9d\u5988\u5988\u6700\u559c\u6b22\u7684\u513f\u6b4c\u3002","info_img":"http:\/\/box.bfimg.com\/img\/281\/780281\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[],"info_area_catlog":[{"areaid":"45","area":"\u5e7c\u513f","categoryid":8001,"category":"\u513f\u6b4c","typeid":"66","typename":"\u6559\u80b2","cateid":"474"}],"info_pianyuan":[{"aid":"119035","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":106,"pagemap":{"1-30":1,"31-60":2,"61-90":3,"91-106":4}},{"aid":"119562","hd_type":"240P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":106,"pagemap":{"1-30":1,"31-60":2,"61-90":3,"91-106":4}}],"info_complatestatus":"2","info_tpl_id":0,"info_subscibe":0,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"780281"};
+        //var movie_detail= {"info_box_tpl":"7","info_channel":"2","info_id":"798050","info_wid":"13","info_score":"8.5","info_scc":"532","info_year":"2016","info_series_id":[],"info_people":[{"type_id":"1","type_name":"\u5bfc\u6f14","people":[{"id":"164788","name":"\u5218\u4fca\u6770"}]},{"type_id":"3","type_name":"\u6f14\u5458","people":[{"id":"712328","name":"\u621a\u8587"},{"id":"708104","name":"\u6731\u6cf3\u817e"},{"id":"774572","name":"\u738b\u8000\u5e86"}]}],"info_shortcomment":[],"info_update_text":"\u5468\u4e00\u81f3\u5468\u516d0\u70b9\u66f4\u65b02\u96c6,\u5468\u65e50\u70b9\u66f4\u65b01\u96c6","info_comment":"\u621a\u8587\u4ea7\u540e\u590d\u51fa\u53d8\u8eab\u675c\u62c9\u62c9","info_name":"\u6211\u662f\u675c\u62c9\u62c9","info_alias":"","info_jianjie":"\u5c81\u6708\u834f\u82d2\uff0c\u675c\u62c9\u62c9\u65e9\u5df2\u4e0d\u662f\u90a3\u53ea\u5347\u804c\u8def\u4e0a\u530d\u5310\u524d\u8fdb\u7684\u804c\u573a\u83dc\u9e1f\uff0c\u5979\u5750\u9547SH\u4eba\u4e8b\u7ecf\u7406\u5df2\u9a7e\u8f7b\u5c31\u719f\uff0c\u4e0d\u65e5\u5c31\u8981\u95ee\u9f0e\u603b\u76d1\u7ea7\u522b\uff1b\u548c\u738b\u4f1f\u7684\u751c\u871c\u604b\u60c5\u74dc\u719f\u8482\u843d\uff0c\u9886\u8bc1\u7ed3\u5a5a\u8fc7\u4e0a\u4e86\u5e78\u798f\u7684\u4e8c\u4eba\u4e16\u754c\u3002\r\n\u4e0d\u6599\uff0c\u4e00\u4e2a\u7b80\u76f4\u662f\u4e3a\u675c\u62c9\u62c9\u91cf\u8eab\u5b9a\u505a\u7684\u654c\u4eba\u51ef\u897f\u6a2a\u7a7a\u51fa\u4e16\uff0c\u7a7a\u964d\u516c\u53f8\u548c\u62c9\u62c9\u7ade\u4e89\u4eba\u4e8b\u603b\u76d1\u3002\u51ef\u897f\u4e8c\u5341\u5999\u9f84\uff0c\u4e09\u5341\u5c81\u7684\u62c9\u62c9\u60e8\u88ab\u5212\u5f52\u8001\u5973\u4eba\u9635\u8425\u3002\u5de5\u4f5c\u4e0a\u72ed\u8def\u76f8\u9022\u52c7\u8005\u80dc\uff0c\u675c\u62c9\u62c9\u51b3\u5b9a\u8d4c\u4e0a\u4e09\u5341\u5c81\u5973\u4eba\u7684\u5c0a\u4e25\u548c\u51ef\u897f\u62fc\u4e86\uff01\u4f46\u8ba9\u675c\u62c9\u62c9\u4e07\u4e07\u6ca1\u60f3\u5230\u7684\u662f\uff0c\u51ef\u897f\u7684\u731b\u70c8\u65cb\u98ce\u7adf\u8fd8\u5e2d\u5377\u5411\u5979\u7684\u5bb6\u5ead\u751f\u6d3b\u3002\r\n\u539f\u6765\u51ef\u897f\u548c\u738b\u5bb6\u76f8\u8bc6\u5df2\u4e45\uff0c\u5979\u662f\u738b\u4f1f\u5988\u7684\u5f97\u610f\u95e8\u751f\uff0c\u738b\u4f1f\u5fc3\u76ee\u4e2d\u7684\u840c\u59b9\u5b50\uff0c\u66f4\u56e0\u7f18\u51d1\u5de7\u642c\u5230\u4e86\u62c9\u62c9\u5bb6\u697c\u4e0b\u3002\u201c\u5600\u5600\u5600\u201d\u8d85\u7ea7\u8b66\u62a5\u62c9\u54cd\u4e86\uff0c\u8bd5\u770b\u5973\u6c49\u5b50\u675c\u62c9\u62c9\u5982\u4f55\u6253\u8d25\u52b2\u654c\uff0c\u675c\u62c9\u62c9\u7684\u804c\u573a\u5a5a\u59fb\u53cc\u91cd\u6218\u6597\u6b22\u7b11\u767b\u573a\uff01","info_img":"http:\/\/box.bfimg.com\/img\/50\/798050\/51_118*157.jpg","info_daoyan_detail":[{"id":"164788","name":"\u5218\u4fca\u6770"}],"info_zhuyan_detail":[{"id":"712328","name":"\u621a\u8587"},{"id":"708104","name":"\u6731\u6cf3\u817e"},{"id":"774572","name":"\u738b\u8000\u5e86"}],"info_area_catlog":[{"areaid":"7","area":"\u5185\u5730","categoryid":2023,"category":"\u7231\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"101"},{"areaid":"7","area":"\u5185\u5730","categoryid":2018,"category":"\u5267\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"104"}],"info_pianyuan":[{"aid":"160574","hd_type":"1080P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":35,"pagemap":{"33-4":1,"3-1":2}},{"aid":"160573","hd_type":"720P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1},{"aid":"160572","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":35,"pagemap":{"33-4":1,"3-1":2}}],"info_complatestatus":"1","info_tpl_id":0,"info_subscibe":2,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"798050"};
+        //var movie_detail= {"info_box_tpl":"7","info_channel":"4","info_id":"788665","info_wid":"13","info_score":"5.4","info_scc":"570","info_year":"2015","info_series_id":[],"info_people":[{"type_id":"19","type_name":"\u4e3b\u6301","people":[{"id":"816208","name":"\u59dc\u6d9b"}]},{"type_id":20,"type_name":"\u5609\u5bbe","people":[]}],"info_shortcomment":[],"info_update_text":"\u6bcf\u5468\u56db\u66f4\u65b01\u671f","info_comment":"\u6700\u65b0\u516b\u5366\u731b\u6599","info_name":"\u5934\u6761\u5927\u731b\u6599","info_alias":"","info_jianjie":"\u6700\u65b0\u9c9c\u7684\u5934\u6761\u8d44\u8baf\uff0c\u6700\u52b2\u7206\u7684\u516b\u5366\u731b\u6599\uff0c\u6700\u7280\u5229\u7684\u5a31\u8bc4\u89c6\u89d2\uff0c\u6700\u63a5\u5730\u6c14\u7684\u5e73\u6c11\u64ad\u62a5\uff0c\u6ca1\u6709\u6211\u4e0d\u77e5\u9053\u7684\uff0c\u53ea\u6709\u4f60\u60f3\u4e0d\u5230\u7684\uff0c\u66b4\u98ce\u5f71\u97f3\u9996\u6863\u5a31\u8bc4\u8d44\u8baf\u8131\u53e3\u79c0\u8282\u76ee\u300a\u5934\u6761\u5927\u731b\u6599\u300b\uff0c\u6bcf\u5468\u4e3a\u60a8\u7cbe\u5fc3\u7504\u9009\u6df1\u6316\u90a3\u4e9b\u4f60\u4e00\u5b9a\u4e0d\u80fd\u9519\u8fc7\u7684\u5934\u6761\u731b\u6599\u3002","info_img":"http:\/\/box.bfimg.com\/img\/165\/788665\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[],"info_area_catlog":[{"areaid":"19","area":"\u5185\u5730","categoryid":4004,"category":"\u5a31\u4e50","typeid":"4","typename":"\u7efc\u827a","cateid":"234"}],"info_pianyuan":[{"aid":"140143","hd_type":"720P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":26,"pagemap":{"26-17":1,"16-7":2,"6-1":3}},{"aid":"140142","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":26,"pagemap":{"26-17":1,"16-7":2,"6-1":3}},{"aid":"140199","hd_type":"240P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":26,"pagemap":{"26-17":1,"16-7":2,"6-1":3}}],"info_complatestatus":"1","info_tpl_id":0,"info_subscibe":2,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"788665"};
+        //var movie_detail= {"info_box_tpl":"5","info_channel":"1","info_id":"796149","info_wid":"13","info_score":"8.7","info_scc":"3233","info_year":"2015","info_series_id":[],"info_people":[{"type_id":"1","type_name":"\u5bfc\u6f14","people":[{"id":"717580","name":"\u7ba1\u864e"}]},{"type_id":"3","type_name":"\u4e3b\u6f14","people":[{"id":"713409","name":"\u51af\u5c0f\u521a"},{"id":"714901","name":"\u5f20\u6db5\u4e88"},{"id":"800495","name":"\u5434\u4ea6\u51e1"},{"id":"737036","name":"\u674e\u6613\u5cf0"},{"id":"86374","name":"\u8bb8\u6674"},{"id":"51208","name":"\u6881\u5929"},{"id":"135112","name":"\u9676\u6cfd\u5982"},{"id":"136297","name":"\u5c39\u529b"},{"id":"782573","name":"\u767d\u4e3e\u7eb2"},{"id":"800736","name":"\u5df4\u56fe"},{"id":"817032","name":"\u738b\u4fca\u51ef"},{"id":"817033","name":"\u6613\u70ca\u5343\u73ba"},{"id":"817034","name":"\u738b\u6e90"},{"id":"826773","name":"\u5c1a\u8bed\u8d24"},{"id":"170004","name":"\u5b81\u6d69"},{"id":"170576","name":"\u5e08\u5c0f\u7ea2"},{"id":"698218","name":"\u5f20\u8bd1"},{"id":"699134","name":"\u5f20\u4e00\u5c71"},{"id":"700766","name":"\u8fde\u5955\u540d"},{"id":"714492","name":"\u5218\u6866"},{"id":"714770","name":"\u6c5f\u73ca"},{"id":"714794","name":"\u8d75\u6bc5"},{"id":"716455","name":"\u6881\u9759"},{"id":"716934","name":"\u4f59\u7691\u78ca"},{"id":"717841","name":"\u4e8e\u548c\u4f1f"},{"id":"736616","name":"\u53f6\u9752"},{"id":"739601","name":"\u80e1\u6653\u5149"},{"id":"741148","name":"\u90ed\u4eac\u98de"},{"id":"759956","name":"\u4efb\u91cd"},{"id":"786081","name":"\u5f20\u9c81\u4e00"},{"id":"791242","name":"\u7ba1\u5b97\u7965"},{"id":"795434","name":"\u9a6c\u5143"},{"id":"796950","name":"\u767d\u7ea2\u6807"},{"id":"800629","name":"\u66f9\u7490"},{"id":"800733","name":"\u9c81\u8bfa"},{"id":"819617","name":"\u5434\u4f18"},{"id":"832357","name":"\u82cf\u5c0f\u660e"},{"id":"832358","name":"\u6c99\u666f\u660c"},{"id":"832359","name":"\u674e\u715c"},{"id":"832360","name":"\u8303\u96ea\u670b"},{"id":"832361","name":"\u7533\u5965"},{"id":"832362","name":"\u90ed\u6653\u5c0f"},{"id":"832363","name":"\u4e01\u6b66"},{"id":"832364","name":"\u5218\u4e91\u9f99"},{"id":"832365","name":"\u675c\u5361\u59ae"},{"id":"832366","name":"\u4f5f\u78ca"},{"id":"832367","name":"\u5434\u8c28\u8a00"},{"id":"832368","name":"\u8d3e\u53cc\u6cfd"},{"id":"832369","name":"\u5f90\u4e50\u540c"}]}],"info_shortcomment":[{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u7236\u5b50\u77db\u76fe\u672c\u8be5\u662f\u65b0\u65e7\u4e24\u4ee3\u4eba\u89c2\u5ff5\u78b0\u649e\u7684\u8f7d\u4f53\uff0c\u5374\u8fd8\u662f\u5728\u51e0\u676f\u9152\u548c\u4e00\u573a\u7236\u5b50\u5bf9\u8c08\u4e2d\u6e29\u548c\u5316\u89e3\uff0c\u597d\u5728\u8001\u5e74\u6f14\u5458\u6f14\u6280\u7206\u68da\uff0c\u5bfc\u6f14\u8fd9\u56de\u53d9\u4e8b\u5f88\u6c89\u7a33\uff0c\u5c0f\u7ec6\u8282\u505a\u5f97\u5f88\u8db3\u5f88\u52a8\u4eba\u3002"},{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u53ef\u4ee5\u60f3\u8c61\uff0c\u8fd9\u4f4d\u201c\u516d\u7237\u201d\u7684\u6c5f\u6e56\u6280\u827a\uff0c\u8ba9\u4ed6\u5728\u8001\u5317\u4eac\u6a2a\u884c\u5927\u6742\u9662\u548c\u90e8\u961f\u5927\u9662\u7684\uff0c\u9760\u7684\u5fc5\u987b\u662f\u8fd9\u4e00\u8eab\u7684\u786c\u6c14\u548c\u4e0d\u5c40\u6c14\u7684\u6001\u5ea6\uff0c\u65e0\u8bba\u662f\u8a00\u8bed\u8fd8\u662f\u5e72\u67b6\uff0c\u90fd\u662f\u4e00\u6837\u5f3a\u786c\u3002"}],"info_update_text":"","info_comment":"\u80e1\u540c\u82f1\u96c4\u7684\u544a\u522b\u6f14\u51fa","info_name":"\u8001\u70ae\u513f","info_alias":"","info_jianjie":"\u66fe\u7ecf\u98ce\u5149\u56db\u4e5d\u57ce\u7684\u8001\u70ae\u516d\u7237\uff0c\u96be\u4ee5\u9002\u5e94\u793e\u4f1a\u5de8\u53d8\uff0c\u86f0\u4f0f\u4e8e\u80e1\u540c\u6df1\u5904\uff0c\u8fc7\u7740\u6e9c\u9e1f\u3001\u7ba1\u95f2\u4e8b\u3001\u53d1\u7262\u9a9a\u7684\u65e0\u804a\u65e5\u5b50\u3002\u67d0\u65e5\uff0c\u516d\u7237\u5f97\u77e5\uff0c\u79bb\u5bb6\u51fa\u8d70\u5df2\u4e45\u7684\u513f\u5b50\u6653\u6ce2\uff0c\u56e0\u4e0e\u4eba\u7ea0\u7eb7\uff0c\u88ab\u65b0\u5d1b\u8d77\u7684\u4e00\u4ee3\u4ee5\u5c0f\u98de\u4e3a\u9996\u5e74\u8f7b\u987d\u4e3b\u975e\u6cd5\u62d8\u7981\u3002\u4e3a\u4e86\u89e3\u6551\u513f\u5b50\uff0c\u516d\u7237\u91cd\u51fa\u6c5f\u6e56\u3002\u516d\u7237\u7528\u81ea\u5df1\u7684\u89c4\u77e9\uff0c\u8bd5\u56fe\u6446\u5e73\u4e8b\u4ef6\uff0c\u5374\u65e0\u5948\u7684\u53d1\u73b0\uff0c\u65e0\u8bba\u662f\u8fd9\u4e2a\u65f6\u4ee3\uff0c\u8fd8\u662f\u81ea\u5df1\u7684\u8eab\u4f53\uff0c\u65e9\u5df2\u4eca\u975e\u6614\u6bd4\u3002 \u4e00\u573a\u65b0\u65e7\u52bf\u529b\u7684\u5bf9\u51b3\u65e0\u6cd5\u907f\u514d...","info_img":"http:\/\/box.bfimg.com\/img\/149\/796149\/51_118*157.jpg","info_daoyan_detail":[{"id":"717580","name":"\u7ba1\u864e"}],"info_zhuyan_detail":[{"id":"713409","name":"\u51af\u5c0f\u521a"},{"id":"714901","name":"\u5f20\u6db5\u4e88"},{"id":"800495","name":"\u5434\u4ea6\u51e1"},{"id":"737036","name":"\u674e\u6613\u5cf0"},{"id":"86374","name":"\u8bb8\u6674"},{"id":"51208","name":"\u6881\u5929"},{"id":"135112","name":"\u9676\u6cfd\u5982"},{"id":"136297","name":"\u5c39\u529b"},{"id":"782573","name":"\u767d\u4e3e\u7eb2"},{"id":"800736","name":"\u5df4\u56fe"},{"id":"817032","name":"\u738b\u4fca\u51ef"},{"id":"817033","name":"\u6613\u70ca\u5343\u73ba"},{"id":"817034","name":"\u738b\u6e90"},{"id":"826773","name":"\u5c1a\u8bed\u8d24"},{"id":"170004","name":"\u5b81\u6d69"},{"id":"170576","name":"\u5e08\u5c0f\u7ea2"},{"id":"698218","name":"\u5f20\u8bd1"},{"id":"699134","name":"\u5f20\u4e00\u5c71"},{"id":"700766","name":"\u8fde\u5955\u540d"},{"id":"714492","name":"\u5218\u6866"},{"id":"714770","name":"\u6c5f\u73ca"},{"id":"714794","name":"\u8d75\u6bc5"},{"id":"716455","name":"\u6881\u9759"},{"id":"716934","name":"\u4f59\u7691\u78ca"},{"id":"717841","name":"\u4e8e\u548c\u4f1f"},{"id":"736616","name":"\u53f6\u9752"},{"id":"739601","name":"\u80e1\u6653\u5149"},{"id":"741148","name":"\u90ed\u4eac\u98de"},{"id":"759956","name":"\u4efb\u91cd"},{"id":"786081","name":"\u5f20\u9c81\u4e00"},{"id":"791242","name":"\u7ba1\u5b97\u7965"},{"id":"795434","name":"\u9a6c\u5143"},{"id":"796950","name":"\u767d\u7ea2\u6807"},{"id":"800629","name":"\u66f9\u7490"},{"id":"800733","name":"\u9c81\u8bfa"},{"id":"819617","name":"\u5434\u4f18"},{"id":"832357","name":"\u82cf\u5c0f\u660e"},{"id":"832358","name":"\u6c99\u666f\u660c"},{"id":"832359","name":"\u674e\u715c"},{"id":"832360","name":"\u8303\u96ea\u670b"},{"id":"832361","name":"\u7533\u5965"},{"id":"832362","name":"\u90ed\u6653\u5c0f"},{"id":"832363","name":"\u4e01\u6b66"},{"id":"832364","name":"\u5218\u4e91\u9f99"},{"id":"832365","name":"\u675c\u5361\u59ae"},{"id":"832366","name":"\u4f5f\u78ca"},{"id":"832367","name":"\u5434\u8c28\u8a00"},{"id":"832368","name":"\u8d3e\u53cc\u6cfd"},{"id":"832369","name":"\u5f90\u4e50\u540c"}],"info_area_catlog":[{"areaid":"1","area":"\u5185\u5730","categoryid":1004,"category":"\u52a8\u4f5c","typeid":"1","typename":"\u7535\u5f71","cateid":"1"},{"areaid":"1","area":"\u5185\u5730","categoryid":1013,"category":"\u5267\u60c5","typeid":"1","typename":"\u7535\u5f71","cateid":"3"}],"info_pianyuan":[{"aid":"157222","hd_type":"1080P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":1,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}},{"aid":"157217","hd_type":"720P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":1,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}},{"aid":"157207","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":1,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}}],"info_complatestatus":0,"info_tpl_id":0,"info_subscibe":0,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","info_trailer":{"aid":"141345","wid":"13","movieid":"789190"},"movieid":"796149"};
+        //var movie_detail= {"info_box_tpl":"0","info_channel":"1","info_id":"791340","info_wid":"13","info_score":"7.7","info_scc":"1261","info_year":"2015","info_series_id":[],"info_people":[{"type_id":"1","type_name":"\u5bfc\u6f14","people":[{"id":"824963","name":"\u7126\u6d0b"}]},{"type_id":"3","type_name":"\u4e3b\u6f14","people":[{"id":"708494","name":"\u5c0f\u6c88\u9633"},{"id":"824957","name":"\u5218\u5c0f\u5149"},{"id":"824958","name":"\u5b8b\u6653\u950b"},{"id":"824959","name":"\u7a0b\u91ce"},{"id":"824960","name":"\u6587\u677e"},{"id":"824961","name":"\u5510\u5a1c"},{"id":"824962","name":"\u5f6d\u79ba\u53b6"}]}],"info_shortcomment":[{"author":"\u66b4\u98ce\u76d2\u5b50","con":"\u672c\u5c71\u4f20\u5a92\u9996\u90e8\u4e92\u8054\u7f51\u5927\u7535\u5f71\u300a\u5c71\u70ae\u8fdb\u57ce\u300b\u5c31\u8981\u6765\u88ad\uff0c\u8be5\u7247\u627f\u88ad\u4e86\u4e1c\u5317\u559c\u5267\u7684\u4f20\u7edf\u98ce\u683c\uff0c\u5c24\u5176\u662f\u5ef6\u7eed\u4e86\u672c\u5c71\u559c\u5267\u7684\u7cbe\u9ad3\u6240\u5728\uff0c\u5305\u88b1\u4e00\u4e2a\u63a5\u4e00\u4e2a\uff0c\u7b11\u70b9\u4e00\u7247\u8fde\u4e00\u7247\u3002"}],"info_update_text":"","info_comment":"\u519c\u6751\u4eba\u609f\u51fa\u4eba\u751f\u771f\u8c1b","info_name":"\u5c71\u70ae\u8fdb\u57ce","info_alias":"\u5c71\u70ae\u4f20\u5947\u4e4b\u5c71\u70ae\u8fdb\u57ce","info_jianjie":"\u300a\u5c71\u70ae\u8fdb\u57ce\u300b\u8bb2\u8ff0\u7684\u662f\u51e0\u4e2a\u519c\u6751\u4eba\u8fdb\u57ce\u594b\u6597\u7684\u6545\u4e8b\uff0c\u4eba\u4eba\u90fd\u6709\u4e00\u90e8\u8840\u6cea\u53f2\uff0c\u5176\u5b9e\u4e5f\u662f\u4e00\u90e8\u52b1\u5fd7\u53f2\uff0c\u56db\u4e2a\u4e1c\u5317\u201c\u5c71\u70ae\u201d\u7a0b\u91ce\u3001\u5b8b\u6653\u5cf0\u3001\u5510\u5a1c\u3001\u5f20\u7b11\u83f2\uff0c\u6216\u4e3a\u771f\u7231\u6216\u4e3a\u540d\u5229\u52c7\u95ef\u5317\u4eac\uff0c\u4e00\u8def\u4e0a\u906d\u9047\u5404\u79cd\u5947\u8469\u7684\u4e0d\u9760\u8c31\u65c5\u7a0b\uff0c\u6700\u540e\u7ec8\u4e8e\u627e\u5230\u751f\u6d3b\u771f\u8c1b\u3002","info_img":"http:\/\/box.bfimg.com\/img\/340\/791340\/51_118*157.jpg","info_daoyan_detail":[{"id":"824963","name":"\u7126\u6d0b"}],"info_zhuyan_detail":[{"id":"708494","name":"\u5c0f\u6c88\u9633"},{"id":"824957","name":"\u5218\u5c0f\u5149"},{"id":"824958","name":"\u5b8b\u6653\u950b"},{"id":"824959","name":"\u7a0b\u91ce"},{"id":"824960","name":"\u6587\u677e"},{"id":"824961","name":"\u5510\u5a1c"},{"id":"824962","name":"\u5f6d\u79ba\u53b6"}],"info_area_catlog":[{"areaid":"1","area":"\u5185\u5730","categoryid":1010,"category":"\u559c\u5267","typeid":"1","typename":"\u7535\u5f71","cateid":"2"},{"areaid":"1","area":"\u5185\u5730","categoryid":1013,"category":"\u5267\u60c5","typeid":"1","typename":"\u7535\u5f71","cateid":"3"}],"info_pianyuan":[{"aid":"147015","hd_type":"1080P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}},{"aid":"147011","hd_type":"720P","wid":"13","left_eye":1,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1},{"aid":"147009","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}},{"aid":"147030","hd_type":"240P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":1,"pagemap":{"1-1":1}}],"info_complatestatus":0,"info_tpl_id":0,"info_subscibe":0,"info_share":1,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["0"],"info_hd":"1","movieid":"791340"};
+        var movie_detail = {
+            "info_box_tpl": "0",
+            "info_channel": "2",
+            "info_id": "104447",
+            "info_wid": "13",
+            "info_score": "9.2",
+            "info_scc": "126",
+            "info_year": "2009",
+            "info_series_id": [],
+            "info_people": [{
+                "type_id": 1,
+                "type_name": "\u5bfc\u6f14",
+                "people": []
+            }, {
+                "type_id": "3",
+                "type_name": "\u6f14\u5458",
+                "people": [{
+                    "id": "701196",
+                    "name": "Aum Patchrapa "
+                }, {
+                    "id": "701197",
+                    "name": "\u4e9a\u745e\u514b\u963f\u83ab\u82cf\u5e15\u897f\u745e"
+                }]
+            }],
+            "info_shortcomment": [],
+            "info_update_text": "",
+            "info_comment": "\u62ff\u8fc7\u6700\u4f73\u5bfc\u6f14\u5956\u7684\u6cf0\u5267",
+            "info_name": "\u6211\u5bb6\u7684\u6076\u9b54\u4e0e\u5929\u4f7f-\u56fd",
+            "info_alias": "",
+            "info_jianjie": "\u56e0\u4e3a\u552f\u4e00\u7684\u4eb2\u4eba\u5976\u5976\u5165\u9662\uff0cJaew\u88ab\u8feb\u63a5\u53d7\u5976\u5976\u7684\u53ee\u5631\u53bb\u7167\u987eChai\uff0c\u521d\u6b21\u76f8\u89c1\uff0c\u90a3\u4e2a\u8ba8\u538c\u7684\u5bb6\u4f19\u5c31\u4ee4Jaew\u975e\u5e38\u4e0d\u6ee1\uff0c\u53ef\u7531\u4e8e\u5976\u5976\u7684\u5173\u7cfb\uff0c\u5979\u4e0d\u5f97\u4e0d\u7559\u4e0b\uff0c\u806a\u660e\u7684Jaew\u4fbf\u5f00\u59cb\u4e86\u6253\u9020Chai\u7684\u4f1f\u5927\u5de5\u7a0b\u3002\r\n\u4e0e\u6b64\u540c\u65f6\uff0cChai\u4e5f\u8ba8\u538c\u8fd9\u4e2a\u5c0f\u4e2b\u5934\u5bf9\u81ea\u5df1\u751f\u6d3b\u7684\u5e72\u6d89\uff0c\u4ece\u6b64\uff0c\u6bcf\u5929\u4e0eJaew\u7684\u6597\u5fd7\u6597\u6cd5\uff0c\u4fbf\u6210\u4e86\u751f\u6d3b\u7684\u6700\u5927\u4e50\u8da3\u3002\r\n\u7531\u4e8e\u7236\u4eb2Chatwan\u8981\u8ba9Chai\u7ee7\u627f\u516c\u53f8\uff0c\u5f15\u53d1\u4e86\u540e\u6bcdDao\u548c\u7ee7\u5b50Yai\u7684\u5f3a\u70c8\u4e0d\u5b89\uff0c\u751f\u6015\u957f\u4e45\u4ee5\u6765\u7684\u82e6\u5fc3\u7ecf\u8425\u6bc1\u4e8e\u4e00\u65e6\uff0c\u4e8e\u662f\uff0c\u4e00\u573a\u593a\u4ea7\u9634\u8c0b\u6b63\u79d8\u5bc6\u8fdb\u884c\u3002\r\n\u6700\u540eJaew\u80fd\u5426\u6210\u529f\u6539\u9020Chai\uff1fChai\u53c8\u80fd\u5426\u63ed\u7a7f\u540e\u6bcd\u7684\u9634\u8c0b\uff1fJaew\u548cChai\u4e4b\u95f4\u4f55\u53bb\u4f55\u4ece\u5462\uff1f",
+            "info_img": "http:\/\/box.bfimg.com\/img\/447\/104447\/51_118*157.jpg",
+            "info_daoyan_detail": [],
+            "info_zhuyan_detail": [{
+                "id": "701196",
+                "name": "Aum Patchrapa "
+            }, {
+                "id": "701197",
+                "name": "\u4e9a\u745e\u514b\u963f\u83ab\u82cf\u5e15\u897f\u745e"
+            }],
+            "info_area_catlog": [{
+                "areaid": "12",
+                "area": "\u6cf0\u56fd",
+                "categoryid": 2018,
+                "category": "\u5267\u60c5",
+                "typeid": "2",
+                "typename": "\u7535\u89c6",
+                "cateid": "151"
+            }, {
+                "areaid": "12",
+                "area": "\u6cf0\u56fd",
+                "categoryid": 2023,
+                "category": "\u7231\u60c5",
+                "typeid": "2",
+                "typename": "\u7535\u89c6",
+                "cateid": "152"
+            }],
+            "info_pianyuan": [{
+                "aid": "9804",
+                "hd_type": "480P",
+                "wid": "13",
+                "left_eye": 0,
+                "exclusive": 0,
+                "dzone": 1,
+                "ispay": 0,
+                "3d": 0,
+                "pay_type": 0,
+                "type": 1,
+                "videosnum": 38,
+                "pagemap": {
+                    "1A-15B": 1,
+                    "16A-19B": 2
+                }
+            }],
+            "info_complatestatus": "2",
+            "info_tpl_id": 0,
+            "info_subscibe": 0,
+            "info_share": 0,
+            "info_shortcut": 1,
+            "info_posters": {
+                "a": [],
+                "w": [],
+                "h": []
+            },
+            "info_sid": ["1", "2", "3", "4", "7", "8", "9", "10", "11", "12", "13", "14", "17", "18", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "36", "37", "38", "39", "40", "41", "43", "44", "45"],
+            "info_hd": "1",
+            "movieid": "104447"
+        };
+        //var movie_detail= {"info_box_tpl":"0","info_channel":"2","info_id":"104447","info_wid":"13","info_score":"9.2","info_scc":"126","info_year":"2009","info_series_id":[],"info_people":[{"type_id":1,"type_name":"\u5bfc\u6f14","people":[]},{"type_id":"3","type_name":"\u6f14\u5458","people":[{"id":"701196","name":"Aum Patchrapa "},{"id":"701197","name":"\u4e9a\u745e\u514b\u963f\u83ab\u82cf\u5e15\u897f\u745e"}]}],"info_shortcomment":[],"info_update_text":"","info_comment":"\u62ff\u8fc7\u6700\u4f73\u5bfc\u6f14\u5956\u7684\u6cf0\u5267","info_name":"\u6211\u5bb6\u7684\u6076\u9b54\u4e0e\u5929\u4f7f-\u56fd","info_alias":"","info_jianjie":"\u56e0\u4e3a\u552f\u4e00\u7684\u4eb2\u4eba\u5976\u5976\u5165\u9662\uff0cJaew\u88ab\u8feb\u63a5\u53d7\u5976\u5976\u7684\u53ee\u5631\u53bb\u7167\u987eChai\uff0c\u521d\u6b21\u76f8\u89c1\uff0c\u90a3\u4e2a\u8ba8\u538c\u7684\u5bb6\u4f19\u5c31\u4ee4Jaew\u975e\u5e38\u4e0d\u6ee1\uff0c\u53ef\u7531\u4e8e\u5976\u5976\u7684\u5173\u7cfb\uff0c\u5979\u4e0d\u5f97\u4e0d\u7559\u4e0b\uff0c\u806a\u660e\u7684Jaew\u4fbf\u5f00\u59cb\u4e86\u6253\u9020Chai\u7684\u4f1f\u5927\u5de5\u7a0b\u3002\r\n\u4e0e\u6b64\u540c\u65f6\uff0cChai\u4e5f\u8ba8\u538c\u8fd9\u4e2a\u5c0f\u4e2b\u5934\u5bf9\u81ea\u5df1\u751f\u6d3b\u7684\u5e72\u6d89\uff0c\u4ece\u6b64\uff0c\u6bcf\u5929\u4e0eJaew\u7684\u6597\u5fd7\u6597\u6cd5\uff0c\u4fbf\u6210\u4e86\u751f\u6d3b\u7684\u6700\u5927\u4e50\u8da3\u3002\r\n\u7531\u4e8e\u7236\u4eb2Chatwan\u8981\u8ba9Chai\u7ee7\u627f\u516c\u53f8\uff0c\u5f15\u53d1\u4e86\u540e\u6bcdDao\u548c\u7ee7\u5b50Yai\u7684\u5f3a\u70c8\u4e0d\u5b89\uff0c\u751f\u6015\u957f\u4e45\u4ee5\u6765\u7684\u82e6\u5fc3\u7ecf\u8425\u6bc1\u4e8e\u4e00\u65e6\uff0c\u4e8e\u662f\uff0c\u4e00\u573a\u593a\u4ea7\u9634\u8c0b\u6b63\u79d8\u5bc6\u8fdb\u884c\u3002\r\n\u6700\u540eJaew\u80fd\u5426\u6210\u529f\u6539\u9020Chai\uff1fChai\u53c8\u80fd\u5426\u63ed\u7a7f\u540e\u6bcd\u7684\u9634\u8c0b\uff1fJaew\u548cChai\u4e4b\u95f4\u4f55\u53bb\u4f55\u4ece\u5462\uff1f","info_img":"http:\/\/box.bfimg.com\/img\/447\/104447\/51_118*157.jpg","info_daoyan_detail":[],"info_zhuyan_detail":[{"id":"701196","name":"Aum Patchrapa "},{"id":"701197","name":"\u4e9a\u745e\u514b\u963f\u83ab\u82cf\u5e15\u897f\u745e"}],"info_area_catlog":[{"areaid":"12","area":"\u6cf0\u56fd","categoryid":2018,"category":"\u5267\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"151"},{"areaid":"12","area":"\u6cf0\u56fd","categoryid":2023,"category":"\u7231\u60c5","typeid":"2","typename":"\u7535\u89c6","cateid":"152"}],"info_pianyuan":[{"aid":"9804","hd_type":"480P","wid":"13","left_eye":0,"exclusive":0,"dzone":1,"ispay":0,"3d":0,"pay_type":0,"type":1,"videosnum":38,"pagemap":{"19B-5A":1,"4B-1A":2}}],"info_complatestatus":"2","info_tpl_id":0,"info_subscibe":0,"info_share":0,"info_shortcut":1,"info_posters":{"a":[],"w":[],"h":[]},"info_sid":["1","2","3","4","7","8","9","10","11","12","13","14","17","18","21","22","23","24","25","26","27","28","29","30","31","32","33","34","36","37","38","39","40","41","43","44","45"],"info_hd":"1","movieid":"104447"};
+        var caching = {
+            "wnews": [{
+                "title": "\u9b54\u672f\u5feb\u6597: \u7b2c2\u5b63",
+                "img": "http:\/\/box.bfimg.com\/img\/30\/781530\/51_150*200.jpg",
+                "comment": "\u795e\u79d8\u5927\u76d7\u602a\u76d7\u57fa\u5fb7\u7684\u6545\u4e8b",
+                "url": "\/play\/30\/play-781530.html",
+                "info": "24\u96c6\u5168"
+            }, {
+                "title": "\u732b\u548c\u8001\u9f20",
+                "img": "http:\/\/box.bfimg.com\/img\/397\/94397\/51_150*200.jpg",
+                "comment": "\u673a\u7075\u8001\u9f20\u4e0e\u7b28\u732b\u7684\u6545\u4e8b",
+                "url": "\/play\/397\/play-94397.html",
+                "info": "185\u96c6\u5168"
+            }, {
+                "title": "\u9b54\u672f\u5feb\u6597: \u7b2c1\u5b63",
+                "img": "http:\/\/box.bfimg.com\/img\/262\/761762\/51_150*200.jpg",
+                "comment": "\u540d\u4fa6\u63a2\u67ef\u5357\u7684\u524d\u8eab",
+                "url": "\/play\/262\/play-761762.html",
+                "info": "12\u96c6\u5168"
+            }, {
+                "title": "\u5927\u5934\u513f\u5b50\u548c\u5c0f\u5934\u7238\u72382",
+                "img": "http:\/\/box.bfimg.com\/img\/157\/166157\/51_150*200.jpg",
+                "comment": "\u5feb\u4e50\u7236\u5b50\u7684\u5e78\u798f\u751f\u6d3b",
+                "url": "\/play\/157\/play-166157.html",
+                "info": "78\u96c6\u5168"
+            }, {
+                "title": "\u753b\u6c5f\u6e56\u4e4b\u7075\u4e3b",
+                "img": "http:\/\/box.bfimg.com\/img\/356\/789856\/51_150*200.jpg",
+                "comment": "\u5927\u578b\u4e09\u7ef4\u6b66\u4fa0\u52a8\u753b",
+                "url": "\/play\/356\/play-789856.html",
+                "info": "\u66f4\u65b0\u81f330\u96c6"
+            }, {
+                "title": "\u732b\u548c\u8001\u9f20\u56db\u5ddd\u65b9\u8a00\u7248",
+                "img": "http:\/\/box.bfimg.com\/img\/5\/171005\/51_150*200.jpg",
+                "comment": "\u7b11\u5230\u4f60\u7259\u9f7f\u6389\u5149",
+                "url": "\/play\/5\/play-171005.html",
+                "info": "121\u96c6\u5168"
+            }, {
+                "title": "\u795e\u517d\u91d1\u521a",
+                "img": "http:\/\/box.bfimg.com\/img\/289\/103789\/51_150*200.jpg",
+                "comment": "\u4e2d\u56fd\u7248\u53d8\u5f62\u91d1\u521a",
+                "url": "\/play\/289\/play-103789.html",
+                "info": "46\u96c6\u5168"
+            }, {
+                "title": "\u53ef\u53ef\u5c0f\u7231",
+                "img": "http:\/\/box.bfimg.com\/img\/338\/785338\/51_150*200.jpg",
+                "comment": "\u8282\u7ea6\u7528\u6c34\u4f4e\u78b3\u751f\u6d3b",
+                "url": "\/play\/338\/play-785338.html",
+                "info": "255\u96c6\u5168"
+            }, {
+                "title": "\u6c6a\u6c6a\u961f\u7acb\u5927\u529f",
+                "img": "http:\/\/box.bfimg.com\/img\/205\/795205\/51_150*200.jpg",
+                "comment": "\u5356\u840c\u76ca\u667a\u52a8\u753b",
+                "url": "\/play\/205\/play-795205.html",
+                "info": "26\u96c6\u5168"
+            }, {
+                "title": "\u5154\u5c0f\u8d1d\u513f\u6b4c\u5927\u5168",
+                "img": "http:\/\/box.bfimg.com\/img\/8\/777008\/51_150*200.jpg",
+                "comment": "\u7ecf\u5178\u513f\u6b4c\u5bd3\u6559\u4e8e\u4e50",
+                "url": "\/play\/8\/play-777008.html",
+                "info": "208\u96c6\u5168"
+            }, {
+                "title": "\u5df4\u5566\u5566\u5c0f\u9b54\u4ed9\u4e4b\u5947\u8ff9\u821e\u6b65",
+                "img": "http:\/\/box.bfimg.com\/img\/58\/233558\/51_150*200.jpg",
+                "comment": "\u63a2\u67e5\u591c\u661f\u5b9d\u76d2",
+                "url": "\/play\/58\/play-233558.html",
+                "info": "52\u96c6\u5168"
+            }, {
+                "title": "\u545c\u54aa123",
+                "img": "http:\/\/box.bfimg.com\/img\/203\/795203\/51_150*200.jpg",
+                "comment": "\u5b66\u9f84\u524d\u513f\u7ae5\u6559\u80b2\u7247",
+                "url": "\/play\/203\/play-795203.html",
+                "info": "80\u96c6\u5168"
+            }, {
+                "title": "\u94e0\u7532\u52c7\u58eb",
+                "img": "http:\/\/box.bfimg.com\/img\/331\/82331\/51_150*200.jpg",
+                "comment": "\u4e2d\u56fd\u7248\u201c\u7f8e\u5c11\u5973\u6218\u58eb\u201d",
+                "url": "\/play\/331\/play-82331.html",
+                "info": "52\u96c6\u5168"
+            }, {
+                "title": "\u6234\u62ff\u5965\u7279\u66fc-\u56fd",
+                "img": "http:\/\/box.bfimg.com\/img\/164\/170164\/51_150*200.jpg",
+                "comment": "\u53f2\u4e0a\u6700\u641e\u7b11\u7684\u5965\u7279\u66fc",
+                "url": "\/play\/164\/play-170164.html",
+                "info": "51\u96c6\u5168"
+            }, {
+                "title": "\u8d5b\u7f57\u5965\u7279\u66fc\u683c\u6597: \u7b2c2\u5b63",
+                "img": "http:\/\/box.bfimg.com\/img\/118\/789618\/51_150*200.jpg",
+                "comment": "\u8d5b\u7f57\u5965\u7279\u66fc\u683c\u6597",
+                "url": "\/play\/118\/play-789618.html",
+                "info": "15\u96c6\u5168"
+            }, {
+                "title": "\u5c0f\u9a6c\u5b9d\u8389\u53cb\u8c0a\u7684\u9b54\u529b:\u7b2c4\u5b63",
+                "img": "http:\/\/box.bfimg.com\/img\/62\/793062\/51_150*200.jpg",
+                "comment": "\u8f7b\u677e\u5e7d\u9ed8\u76ca\u667a\u542f\u8fea\u52a8\u753b",
+                "url": "\/play\/62\/play-793062.html",
+                "info": "26\u96c6\u5168"
+            }, {
+                "title": "\u94c1\u7532\u5a01\u866b",
+                "img": "http:\/\/box.bfimg.com\/img\/2\/211002\/51_150*200.jpg",
+                "comment": "\u9f99\u6218\u9a91\u62ef\u6551\u7532\u866b\u4e16\u754c\u7684\u4f20\u5947\u6545\u4e8b",
+                "url": "\/play\/2\/play-211002.html",
+                "info": "52\u96c6\u5168"
+            }, {
+                "title": "\u51fa\u53d1\u5427\u8fea\u4e9a\u54e5",
+                "img": "http:\/\/box.bfimg.com\/img\/200\/795200\/51_150*200.jpg",
+                "comment": "\u7cfb\u5217\u63a2\u9669\u52a8\u753b",
+                "url": "\/play\/200\/play-795200.html",
+                "info": "80\u96c6\u5168"
+            }],
+            "search": [{
+                "name": "欢乐颂"
+            }, {
+                "name": "巧虎宝宝版"
+            }, {
+                "name": "殊死七日"
+            }, {
+                "name": "山海经之赤影传说"
+            }, {
+                "name": "美人鱼"
+            }]
+        };
+    </script>
+    <script type="text/javascript" src="http://staticm.hd.baofeng.com/script/play.min.js?t=1462241118"></script>
+</body>
+
 </html>

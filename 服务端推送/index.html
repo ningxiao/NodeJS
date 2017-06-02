@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>文件更新推送</title>
-    </head>
-    <body>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>文件更新推送</title>
+    <style>
+        body {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="evslog"></div>
     <script type="text/javascript">
         "use strict";
         const evs = new EventSource('/msg');
@@ -12,10 +20,11 @@
             console.log("推送打开");
         }, false);
         evs.addEventListener('add', (ev) => {
-            console.log("add","--->",ev.data);
+            document.getElementById("evslog").innerHTML = ev.data;
+            console.log("add", "--->", ev.data);
         }, false);
         evs.addEventListener('remove', (ev) => {
-           console.log("remove","--->",ev.data);
+            console.log("remove", "--->", ev.data);
         }, false);
         evs.addEventListener("error", (err) => {
             console.log("推送异常", err);
@@ -25,5 +34,6 @@
             console.log(ev.data);
         }, false);
     </script>
-    </body>
+</body>
+
 </html>
