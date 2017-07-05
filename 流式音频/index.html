@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>WebSocket</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script>
+        ! function(a, b) {
+            function c() {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = parseInt(b / 7.5);
+                f.style.fontSize = c + "px", k.rem = a.rem = c
+            }
+            var d, e = a.document,
+                f = e.documentElement,
+                g = e.querySelector('meta[name="viewport"]'),
+                h = e.querySelector('meta[name="flexible"]'),
+                i = 0,
+                j = 0,
+                k = b.flexible || (b.flexible = {});
+            if (g) {
+                console.warn("将根据已有的meta标签来设置缩放比例");
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            } else if (h) {
+                var m = h.getAttribute("content");
+                if (m) {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/),
+                        o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+                }
+            }
+            if (!i && !j) {
+                var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)),
+                    q = a.devicePixelRatio;
+                i = p ? q >= 4 && (!i || i >= 4) ? 4 : q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+            }
+            if (f.setAttribute("data-dpr", i), !g)
+                if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g);
+                else {
+                    var r = e.createElement("div");
+                    r.appendChild(g), e.write(r.innerHTML)
+                }
+            a.addEventListener("resize", function() {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function(a) {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function() {
+                e.body.style.fontSize = 12 * i + "px"
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function(a) {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function(a) {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var audiocontext, audioBufferSouceNode, websocket = new WebSocket('ws://192.168.204.61:8080/');
+        var AudioContext = window.AudioContext || window.webkitAudioContext;
+
+        function websocketOpen(event) {
+            console.log("Connected to WebSocket server.");
+            websocket.binaryType = 'arraybuffer';
+            setTimeout(function() {
+                websocket.send(JSON.stringify({
+                    "command": "JS"
+                }));
+            }, 1000);
+            setTimeout(function() {
+                document.body.innerHTML = 'Retrieved data from server:开始加载mp3';
+                websocket.send(JSON.stringify({
+                    "command": "IMG"
+                }));
+            }, 3000);
+        }
+
+        function websocketOpenClose(event) {
+            console.log("Disconnected");
+        }
+
+        function websocketMessage(ev) {
+            if (typeof ev.data === "string") {
+                document.body.innerHTML = 'Retrieved data from server: ' + event.data;
+            } else {
+                audiocontext = new AudioContext(); //实例化AudioContext对象
+                audiocontext.decodeAudioData(ev.data, function(buffer) { //解码成pcm流
+                    audioBufferSouceNode = audiocontext.createBufferSource();
+                    audioBufferSouceNode.buffer = buffer;
+                    audioBufferSouceNode.connect(audiocontext.destination);
+                    document.body.innerHTML = 'Retrieved data from server:加载mp3完毕';
+                }, function(e) {
+                    console.log("Fail to decode the file.");
+                });
+
+                // var reader = new FileReader();
+                // reader.onload = function(ev) {
+                //     if (ev.target.readyState == FileReader.DONE) {
+                //         if (!audiocontext) {
+                //             audiocontext = new AudioContext(); //实例化AudioContext对象
+                //         };
+                //         audiocontext.decodeAudioData(ev.target.result, function(buffer) { //解码成pcm流
+                //             audioBufferSouceNode = audiocontext.createBufferSource();
+                //             audioBufferSouceNode.buffer = buffer;
+                //             audioBufferSouceNode.connect(audiocontext.destination);
+                //             audioBufferSouceNode.start(0);
+                //         }, function(e) {
+                //             console.log("Fail to decode the file.");
+                //         });
+                //     };
+                // };
+                // reader.readAsArrayBuffer(ev.data);
+            };
+        }
+
+        function websocketError(event) {
+            console.log('Error occured: ' + event.data);
+        }
+        websocket.onopen = websocketOpen;
+        websocket.onclose = websocketOpenClose;
+        websocket.onmessage = websocketMessage;
+        websocket.onerror = websocketError;
+        document.addEventListener("click", function() {
+            audioBufferSouceNode.start(0);
+        });
+    </script>
+</body>
+
+</html>
