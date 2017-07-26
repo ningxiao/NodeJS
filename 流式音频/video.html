@@ -66,7 +66,7 @@
     <video id="hlsplay" controls="" autoplay=""></video>
     <script type="text/javascript">
         var reader, video, mediasource, sourcebuffer, bytequeue = [];
-        var updating, websocket = new WebSocket('ws://192.168.204.61:8080/');
+        var updating, websocket = new WebSocket('ws://192.168.203.71/');
         var mimecodec = 'video/mp4;codecs="avc1.42001E, mp4a.40.2"'; //avc1.420E01E, mp4a.40.2
         window.URL = window.URL || window.webkitURL;
         window.MediaSource = window.MediaSource || window.WebKitMediaSource;
@@ -77,7 +77,8 @@
             sourcebuffer.addEventListener('updateend', updateend);
             sourcebuffer.timestampOffset = 0;
             websocket.send(JSON.stringify({
-                "command": "VIDEO"
+                "command": "VIDEO",
+                "body": "frag.mp4"
             }));
         };
 

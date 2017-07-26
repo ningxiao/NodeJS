@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+'use strict'
+process.env.NODE_PATH = __dirname + '/../node_modules/';
+const { resolve } = require('path');
+const program = require('commander');
+const res = command => resolve(__dirname, '../commands/', command);
+program.version(require('../package').version);
+program.usage('<command> [options]');
+program.command('init').description('初始化项目').alias('i').action(() => {
+    require('../commands/init')();
+});
+program.command('list').description('项目树结构').alias('l').action(() => {
+    require('../commands/list')();
+});
+program.command('rmdir <dir> [otherDirs...]').description('删除文件').action(function(dir, otherDirs) {
+    console.log('rmdir %s', dir);
+    if (otherDirs) {
+        otherDirs.forEach(function(oDir) {
+            console.log('rmdir %s', oDir);
+        });
+    };
+});
+program.parse(process.argv);
+if (!program.args.length) {
+    program.help();
+};

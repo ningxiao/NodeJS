@@ -94,7 +94,7 @@ const utils = {
                         sock.emit('send', utils.wrap(bytes, true));
                     });
                 } else if (data.command == "VIDEO") {
-                    fs.createReadStream("./audio/frag.mp4").on('data', (bytes) => {
+                    fs.createReadStream("./audio/" + data.body).on('data', (bytes) => {
                         sock.emit('send', utils.wrap(bytes, true));
                     })
                 } else {
