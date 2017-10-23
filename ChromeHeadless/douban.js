@@ -33,11 +33,32 @@ let saveposter = (data) => {
 (async() => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+    /*
+        page.on('request', (request) => {
+            if (request.url.indexOf("douban.js") != -1) {
+                console.log(request.headers);
+            };
+        });
+    */
+    /*
+        page.on('response', async(response) => {
+            if (response.url.indexOf("feed.php") != -1) {
+                //console.log(request.headers);
+                await fs.createWriteStream(path.join(moviedir, 'douban.js')).write(await response.text());
+                await page.screenshot({
+                    path: 'douban.png',
+                    fullPage: true
+                });
+                await browser.close();
+            };
+        });
+    */
     await page.setViewport({
         width: 1440,
         height: 1000
     });
     await page.goto('https://movie.douban.com/');
+    //await page.goto('http://iflow.minfo.baofeng.net/index.html?debug=1#/click/-1');
     await page.screenshot({
         path: 'douban.png',
         fullPage: true
@@ -52,6 +73,6 @@ let saveposter = (data) => {
             }
         })
     });
-    list.map(saveposter);
-    browser.close();
+    //list.map(saveposter);
+    await browser.close();
 })();

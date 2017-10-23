@@ -64,6 +64,7 @@ class BloomFilter {
      * @param {*} value 
      */
     add(value) {
+        let x;
         for (let f of this.func) {
             this.bits.set(f.hash(value), true);
         };
@@ -84,10 +85,12 @@ class BloomFilter {
     };
 }
 let bf = new BloomFilter();
-bf.add("abcdefg");
+bf.add("abcdefgssss");
 bf.add("abcdefg1");
 bf.add("abcdefg2");
 bf.add("abcdefg3");
 bf.add("abcdefg4");
 bf.add("宁肖");
 console.log(bf.contains("abcdefg4"));
+console.log(bf.contains("abc4"));
+console.log(bf.contains("ssss"));
