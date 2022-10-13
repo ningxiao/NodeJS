@@ -8,7 +8,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <script>
-        ! function(a, b) {
+        ! function (a, b) {
             function c() {
                 var b = f.getBoundingClientRect().width;
                 b / i > 540 && (b = 540 * i);
@@ -45,16 +45,16 @@
                     var r = e.createElement("div");
                     r.appendChild(g), e.write(r.innerHTML)
                 }
-            a.addEventListener("resize", function() {
+            a.addEventListener("resize", function () {
                 clearTimeout(d), d = setTimeout(c, 300)
-            }, !1), a.addEventListener("pageshow", function(a) {
+            }, !1), a.addEventListener("pageshow", function (a) {
                 a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
-            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function() {
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () {
                 e.body.style.fontSize = 12 * i + "px"
-            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function(a) {
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) {
                 var b = parseFloat(a) * this.rem;
                 return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
-            }, k.px2rem = function(a) {
+            }, k.px2rem = function (a) {
                 var b = parseFloat(a) / this.rem;
                 return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
             }
@@ -66,11 +66,10 @@
     <video id="hlsplay" controls="" autoplay=""></video>
     <script type="text/javascript">
         var reader, video, mediasource, sourcebuffer, bytequeue = [];
-        var updating, websocket = new WebSocket('ws://192.168.203.71/');
+        var updating, websocket = new WebSocket('ws://127.0.0.1/');
         var mimecodec = 'video/mp4;codecs="avc1.42001E, mp4a.40.2"'; //avc1.420E01E, mp4a.40.2
         window.URL = window.URL || window.webkitURL;
         window.MediaSource = window.MediaSource || window.WebKitMediaSource;
-
         function sourceopen() {
             reader = new FileReader();
             sourcebuffer = mediasource.addSourceBuffer(mimecodec);
@@ -86,9 +85,21 @@
             updating = true;
             websocket.binaryType = 'arraybuffer';
             video = document.querySelector('#hlsplay');
+            console.log(MediaSource.isTypeSupported('video/webm; codecs="vorbis,vp8"'));//是否支持webm
+            console.log(MediaSource.isTypeSupported('video/mp4; codecs="avc1.42E01E,mp4a.40.2"'));//是否支持mp4
+            console.log(MediaSource.isTypeSupported('video/mp2t; codecs="avc1.42E01E,mp4a.40.2"'));//是否支持ts
             if ('MediaSource' in window && MediaSource.isTypeSupported(mimecodec)) {
                 mediasource = new MediaSource();
                 mediasource.addEventListener('sourceopen', sourceopen, false);
+                mediasource.addEventListener('sourceended', function () {
+                    console.log('sourceended');
+                });
+                mediasource.addEventListener('sourceclose', function () {
+                    console.log('sourceclose');
+                });
+                mediasource.addEventListener('error', function () {
+                    console.log('error');
+                });
                 video.src = window.URL.createObjectURL(mediasource);
                 video.play();
             } else {
@@ -98,6 +109,7 @@
 
         function websocketOpenClose(event) {
             console.log("Disconnected");
+            mediasource.endOfStream();
         }
 
         function updateend() {

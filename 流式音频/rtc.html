@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>WebSocket</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+</head>
+
+<body>
+    <video></video>
+    <script type="text/javascript">
+        const getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+        const constraints = {
+            audio: true,
+            video: {
+                width: 1280, height: 720
+            }, optional: [
+                { frameRate: 30 }
+            ]
+        };
+        if (getUserMedia) {
+            navigator.getUserMedia(constraints, stream => {
+                var video = document.querySelector('video');
+                video.onloadedmetadata = function (e) {
+                    video.play();
+                };
+                if (window.URL) {
+                    video.src = window.URL.createObjectURL(stream);
+                } else {
+                    video.src = stream;
+                }
+            }, err => {
+                console.log('navigator.getUserMedia error: ', err);
+            });
+        }
+    </script>
+</body>
+
+</html>

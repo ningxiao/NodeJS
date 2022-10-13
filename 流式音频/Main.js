@@ -142,7 +142,6 @@ server.on('error', (err) => {
         res.writeHead(404);
         res.end();
     }
-
     // if (!req.upgrade) { // 非upgrade请求选择：中断或提供普通网页
     //     res.writeHead(200, { 'content-type': 'text/plain' });
     //     res.write('WebSocket server works!');
