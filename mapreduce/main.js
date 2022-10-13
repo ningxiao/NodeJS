@@ -36,7 +36,7 @@ module.exports = (cores = cpus) => {
                     });
                 }
             }
-            cluster.on('exit', (worker) => {
+            cluster.on('exit', () => {
                 finished++;
                 if (finished === cores) { // 执行完成，进行数据整合。
                     const groups = resultReduce(results);
@@ -53,14 +53,9 @@ module.exports = (cores = cpus) => {
             const tid = Date.now();
             const intermediate = [];
             const index = cluster.worker.id - 1;
+            const start = index * step;
+            const end = Math.min(start + step, splitSize);
             console.time(`子进程#${id}：计算耗时`);
-            const {
-                start,
-                end
-            } = {
-                start: index * step,
-                end: Math.min(index * step + step, splitSize)
-            };
             console.log(`子进程#${id}：执行Map`);
             splits.slice(start, end).forEach((split) => {
                 const [key, value] = split;

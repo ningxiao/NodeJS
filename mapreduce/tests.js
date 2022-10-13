@@ -1,4 +1,4 @@
-const mapreduce = require('./main')(4);//启动核数
+const mapreduce = require('./main')(2);//启动核数
 const information = require('./data.json');
 const MapOperator = (key, value) => {
     const aux = {};
