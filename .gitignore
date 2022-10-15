@@ -1,5 +1,7 @@
-/koa/node_modules/
-/async/node_modules/
+/koa/node_modules
+/async/node_modules
 /脚手架/node_modules
 /ChromeHeadless/node_modules
 /ChromeHeadless/movies
+/mapreduce/node_modules
+/mapreduce/splits
