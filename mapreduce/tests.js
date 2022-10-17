@@ -23,11 +23,9 @@ const operatorMap = {
             return list;
         },
         reduce: (key, values) => {
-            let total = 0;
-            values.forEach((count) => {
-                total += count;
-            });
-            return total;
+            return values.reduce((total, count) => {
+                return total + count;
+            }, 0);
         }
     },
     good: {
@@ -69,11 +67,9 @@ const operatorMap = {
             return list;
         },
         reduce: (key, values) => {
-            let total = 0;
-            values.forEach((count) => {
-                total += count;
+            return values.reduce((total, count) => {
+                return total + count;
             });
-            return total;
         }
     }
 }

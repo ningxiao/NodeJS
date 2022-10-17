@@ -67,7 +67,7 @@ export default (cores = cpus().length) => {
                 crlfDelay: Infinity,
                 input: createReadStream(`./splits/${splitName}.log`)
             });
-            rl.on('line', vo => {
+            rl.on('line', vo => { // 读取一行数据
                 const [key, value] = JSON.parse(vo);
                 intermediate.push(...map(key, value));
             });
