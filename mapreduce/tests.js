@@ -14,7 +14,7 @@ const operatorMap = {
         map: (key, value) => {
             const aux = {};
             const list = [];
-            value.split(' ').forEach(key => {
+            value.split(' ').forEach(key => { // ["frase primera", "primer trozo 遭受不公 de informacion para procesado primer trozo"]
                 aux[key] = (aux[key] || 0) + 1;
             });
             for (const key in aux) {
