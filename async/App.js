@@ -164,6 +164,11 @@ const httpserver = http.createServer((req, res) => {
     let query = body.query;
     let pathname = body.pathname;
     res.setHeader("Server", "Nxiao/V5");
+    if (path.normalize(decodeURI(req.url)) !== decodeURI(req.url)) {
+        res.statusCode = 403;
+        res.end();
+        return;
+    }
     if (pathname in routing) {
         routing[pathname](req, res);
     } else {
